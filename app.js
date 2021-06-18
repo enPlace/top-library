@@ -1,7 +1,9 @@
-const Book = function(name, pages, read=false){
+class Book{
+    constructor(name, pages, read=false){
     this.name = name
     this.pages = pages
     this.read = read
+    }
 }
 
 Book.prototype.print= function(){
@@ -13,3 +15,6 @@ Book.prototype.changeStatus = function(){
     this.read = true
 }
 const Harry = new Book("harry potter", 300)
+
+
+let myLibrary = [];
