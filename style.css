@@ -2,11 +2,11 @@
 
 body{
     margin: 0;
-    background-image: url(background.jpg);
-    background-size: contain;
     font-family: sans-serif;
-    
+    background-color:rgb(37, 37, 37);
+    color: white;
 }
+
 
 
 .wrapper{
@@ -24,13 +24,13 @@ body{
         position: relative; 
     
 }
-form{
+.search-bar form{
     margin: 1%;
     margin-top: 1%;
    
     
 }
-input{
+.search-bar input{
     width: 40%;
     padding-left: 10px;
     padding-right: 10px;
@@ -39,7 +39,7 @@ input{
     background: url(loupe.png) no-repeat scroll;
     background-position: 98%;
     background-size: 20px;
-    border-radius: 15px;
+    border-radius: 5px;
 
     
 }
@@ -48,7 +48,7 @@ input{
 
 
 .user-results{
-    background-color: rgba(255, 255, 255, 0.644);
+    background-color:rgb(37, 37, 37);
     margin: 0px auto;
     /* border: 1px solid black;  */
     display: flex;
@@ -70,7 +70,7 @@ input{
     margin: 10px;
     border-radius: 5px;
     transition: all .4s ease;
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(78, 78, 78);
     position: relative;
     
 }
@@ -83,30 +83,31 @@ input{
    margin-bottom: -5px; */
    transform: scale(1.14);
    transition: all .4s ease;
-   background-color: rgb(240, 240, 239);
+   background-color: rgb(78, 78, 78);
    z-index: 5;
    
    
 }
 .user-card:hover button{
-    background-color: rgb(240, 240, 239);
-    color: black;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
     transition: all .4s ease;
 }
 .close{
     position: absolute;
-   right: 15px;
+   right: 7px;
    top: 10px;
 }
 .close button{
     border: none;
-    color: rgb(228, 228, 228);
-    background-color:rgb(228, 228, 228);
+    color: rgb(78, 78, 78);
+    background-color: transparent;
     transition: all .4s ease;
 }
 .close button:hover{
     cursor:pointer;
-    background-color:rgb(228, 228, 228)
+    background-color:transparent;
     
    
 }
@@ -152,13 +153,13 @@ input{
         margin: 10px;
         border-radius: 5px;
         transition: all .4s ease;
-        background-color: rgb(228, 228, 228);
+        background-color: rgb(78, 78, 78);
         position: relative;
     }
     .avatar{
         width: 60%;
     }
-    input{
+    .search-bar input{
         font-size: 18px;
         width: 55%;
         background-size: 14px;
@@ -175,13 +176,13 @@ input{
         margin: 10px;
         border-radius: 5px;
         transition: all .4s ease;
-        background-color: rgb(228, 228, 228);
+        background-color: rgb(78, 78, 78);
         position: relative;
     }
     .avatar{
         width: 50px;
     }
-    input{
+    .search-bar input{
         font-size: 18px;
         width: 55%;
         background-size: 14px;

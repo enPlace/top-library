@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    <link rel="stylesheet" href="modal.css">
+    <script src="popup.js" defer></script>
+    <script src="app.js" defer></script>
+    
     <title>User Info</title>
     
 </head>
@@ -21,70 +24,70 @@
     </div>
     <div class="user-results">
         <div class="user-card add-card">
-           <div class = "plus">+</div>
+           <div class = "plus" onclick="toggleBookModal()">+</div>
        </div>
        <div class="user-card">
-        <div class="close"><button>x</button></div>
+        <div class="close"><button>&times;</button></div>
         <img src="images.jpg" class="avatar"> 
        <div class="top info">FirstName </div>
        <div class="bottom info">LastName </div>
    </div>
    <div class="user-card">
-    <div class="close"><button>x</button></div>
+    <div class="close"><button>&times;</button></div>
     <img src="images.jpg" class="avatar"> 
    <div class="top info">BookTitle</div>
    <div class="bottom info"> Author Name</div>
 </div>
 <div class="user-card">
-    <div class="close"><button>x</button></div>
+    <div class="close"><button>&times;</button></div>
     <img src="images.jpg" class="avatar"> 
    <div class="top info">BookTitle</div>
    <div class="bottom info"> Author Name</div>
 </div>
 <div class="user-card">
-    <div class="close"><button>x</button></div>
+    <div class="close"><button>&times;</button></div>
     <img src="images.jpg" class="avatar"> 
    <div class="top info">BookTitle</div>
    <div class="bottom info"> Author Name</div>
 </div>
 <div class="user-card">
-    <div class="close"><button>x</button></div>
+    <div class="close"><button>&times;</button></div>
     <img src="images.jpg" class="avatar"> 
    <div class="top info">BookTitle</div>
    <div class="bottom info"> Author Name</div>
 </div>
 <div class="user-card">
-    <div class="close"><button>x</button></div>
+    <div class="close"><button>&times;</button></div>
     <img src="images.jpg" class="avatar"> 
    <div class="top info">BookTitle</div>
    <div class="bottom info"> Author Name</div>
 </div>
 <div class="user-card">
-    <div class="close"><button>x</button></div>
+    <div class="close"><button>&times;</button></div>
     <img src="images.jpg" class="avatar"> 
    <div class="top info">BookTitle</div>
    <div class="bottom info"> Author Name</div>
 </div>
 <div class="user-card">
-    <div class="close"><button>x</button></div>
+    <div class="close"><button>&times;</button></div>
     <img src="images.jpg" class="avatar"> 
    <div class="top info">BookTitle</div>
    <div class="bottom info"> Author Name</div>
 </div>
 <div class="user-card">
-    <div class="close"><button>x</button></div>
+    <div class="close"><button>&times;</button></div>
     <img src="images.jpg" class="avatar"> 
    <div class="top info">BookTitle</div>
    <div class="bottom info"> Author Name</div>
 </div>
 <div class="user-card">
-    <div class="close"><button>x</button></div>
+    <div class="close"><button>&times;</button></div>
     <img src="images.jpg" class="avatar"> 
    <div class="top info">BookTitle</div>
    <div class="bottom info"> Author Name</div>
 </div>
 <div class="user-card">
-    <div class="close"><button>x</button></div>
+    <div class="close"><button>&times;</button></div>
     <img src="images.jpg" class="avatar"> 
    <div class="top info">BookTitle</div>
    <div class="bottom info"> Author Name</div>
@@ -92,5 +95,24 @@
 
     </div>
 </div>
+
+<div class="modal" id="modal">
+    <div class="modal-header"><h1>Add a new book </h1><button class="close-button" onclick="toggleBookModal()">&times;</button></div>
+    <br>
+    <form id="new-book">
+        <label for="title" class="title">Title</label>
+        <br><br>
+        <input type="text" name = "title" id = "title">
+        <br><br>
+        <label for="author" class = "author">Author</label>
+        <br><br>
+        <input type="text" name = "author">
+        <br><br>
+        <input type="checkbox" id="cbox1" value="first_checkbox"><label> I've already read this book</label>
+        <br><br>
+        <button type="submit">Add Book</button>
+    </form>
+</div>
+<div id="overlay"></div>
 </body>
 </html>
