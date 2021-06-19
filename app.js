@@ -1,8 +1,11 @@
 class Book{
-    constructor(name, pages, read=false){
+    constructor(name, author, pages, read=false){
     this.name = name
+    this.author = author
     this.pages = pages
     this.read = read
+    this.dateAdded = new Date()
+
     }
 }
 

@@ -110,6 +110,27 @@ input{
     
    
 }
+
+.add-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+
+}
+.plus{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+      transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.add-card:hover .plus{
+-webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  transition: all 0.3s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
 .avatar{
     
     width: 60%;
