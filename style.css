@@ -121,12 +121,12 @@ input{
 
 @media only screen and (max-width: 600px) {
     .user-card{
-        width:125px;
-        height: 125px;
+        width:124px;
+        height: 169px ;
         font-size: 12px;
         /* border: 1px solid black; */
         margin: 10px;
-        border-radius: 20px;
+        border-radius: 5px;
         transition: all .4s ease;
         background-color: rgb(228, 228, 228);
         position: relative;
@@ -142,6 +142,28 @@ input{
 
 }
 
+@media only screen and (max-width: 459px) {
+    .user-card{
+        width:93px;
+        height: 127px ;
+        font-size: 12px;
+        /* border: 1px solid black; */
+        margin: 10px;
+        border-radius: 5px;
+        transition: all .4s ease;
+        background-color: rgb(228, 228, 228);
+        position: relative;
+    }
+    .avatar{
+        width: 50px;
+    }
+    input{
+        font-size: 18px;
+        width: 55%;
+        background-size: 14px;
+    }
+
+}
 /*Scrollbar*/
 /* width */
 ::-webkit-scrollbar {
