@@ -20,6 +20,24 @@ Book.prototype.changeStatus = function(){
 const Harry = new Book("harry potter", 300)
 
 
-let myLibrary = [];
+let myLibrary = {
+    book1:{
+        name: "Harry Potter",
+        author: "JK Rowling",
+        read: "true",
+        isbn: "kcnkdlimce",
+    }, 
+    book2:{
+        name: "Where's Waldo",
+        author: "unknown",
+        read:"false",
+        isbn: "ldmice",
+    },
+    book3:{
+        name: "The Stranger",
+        author: "albert camus",
+        read: "true",
+        isbn: "kcmiekd",
+    }};
 
 
