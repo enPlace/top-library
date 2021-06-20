@@ -29,3 +29,17 @@ if (storageAvailable('localStorage')) {
   else {
     console.log("nope!")
   }
+
+function getUserLibrary(){
+    if(localStorage.getItem("myLibrary")){
+    myLibrary = JSON.parse(localStorage.getItem("myLibrary"))
+    }
+    if(localStorage.getItem('booknum')){
+        booknum = localStorage.getItem('booknum')      
+    }
+}
+
+function saveUserLibrary(){
+    localStorage.setItem('myLibrary', JSON.stringify(myLibrary))
+    localStorage.setItem('booknum', booknum)
+}

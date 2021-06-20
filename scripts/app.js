@@ -1,26 +1,8 @@
-class Book{
-    constructor(name, author, pages, read=false){
-    this.name = name
-    this.author = author
-    this.pages = pages
-    this.read = read
-    this.dateAdded = new Date()
 
-    }
-}
-
-Book.prototype.print= function(){
-    console.log(
-        this.name, this.pages, this.read
-    )
-}
-Book.prototype.changeStatus = function(){
-    this.read = true
-}
-const Harry = new Book("harry potter", 300)
-
-
-let myLibrary = {
+let myLibrary ={}
+let booknum = "1"
+let closeButtons = document.querySelectorAll(".close")
+const defaultLibrary= {
     book1:{
         name: "Harry Potter",
         author: "JK Rowling",
@@ -40,4 +22,33 @@ let myLibrary = {
         isbn: "kcmiekd",
     }};
 
+class Book{
+    constructor(name, author, isbn=false, read=false){
+    this.name = name
+    this.author = author
+    this.isbn = isbn
+    this.read = read
+    this.dateAdded = new Date()
+    }
+    print(){
+        console.log(this.name, this.pages, this.read)
+    }
+    changeStatus(){
+        this.read = true
+    }    
+}
 
+function newBookObject(name, author, isbn, read){
+    myLibrary[booknum] = new Book(name, author, isbn, read)
+    booknum = (parseInt(booknum) +1).toString()
+}
+
+
+const deleteCard = function(e){
+    console.log(e.target.parentNode.parentNode.parentNode)
+    e.target.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode)
+}
+
+closeButtons.forEach(button =>{
+    button.addEventListener('click', deleteCard)
+})
