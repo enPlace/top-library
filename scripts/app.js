@@ -2,6 +2,7 @@
 let myLibrary ={}
 let booknum = "1"
 let closeButtons = document.querySelectorAll(".close")
+let userResults = document.getElementById("user-results")
 const defaultLibrary= {
     book1:{
         name: "Harry Potter",
@@ -41,6 +42,14 @@ class Book{
 function newBookObject(name, author, isbn, read){
     myLibrary[booknum] = new Book(name, author, isbn, read)
     booknum = (parseInt(booknum) +1).toString()
+}
+function newCard(){
+    let newcard = document.createElement('div')
+    newcard.classList = "user-card"
+    newcard.innerHTML = '<div class="close"><button>&times;</button></div><img src="images.jpg" class="avatar"> <div class="top info">FirstName </div><div class="bottom info">LastName </div>'
+    userResults.appendChild(newcard)
+
+    
 }
 
 
