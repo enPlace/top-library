@@ -3,43 +3,7 @@ let myLibrary ={}
 let booknum = "1"
 let closeButtons = document.querySelectorAll(".close")
 let userResults = document.getElementById("user-results")
-const defaultLibrary= {
-    book1:{
-        name: "The Philosophy of Jean-Paul Sartre",
-        author: "Jean-Paul Sartre",
-        read: "true",
-        isbn: "1400076323",
-    }, 
-    book2:{
-        name: "Boggs:A Comedy of Values",
-        author: "Lawrence Weschler  ",
-        read:"true",
-        isbn: "9780226893969",
-    },
-    book3:{
-        name: "Ficciones",
-        author: "Jorge Louis Borges",
-        read: "true",
-        isbn: "8426405738",
-    }, 
-    book4:{
-        name: "Something Deeply Hidden: Quantum Worlds and the Emergence of Spacetime",
-        author: "Sean Carrol",
-        read: "false",
-        isbn: "9781524743017",
-    }, 
-    book5:{
-        name: "Gödel, Escher, Bach: An Eternal Golden Braid",
-        author: "Douglas Hofstadter",
-        read: "true",
-        isbn: "0465026567"
-},
-    book6:{
-        name: "Cracking the Coding Interview", 
-        author: "Gale Laakmann McDowell",
-        read: "false",
-        isbn: "0984782850",
-    }};
+const keys = Object.keys(defaultLibrary)
 
 class Book{
     constructor(name, author, isbn=false, read=false, imgsrc){
@@ -62,13 +26,11 @@ function newBookObject(name, author, isbn, read){
     myLibrary[booknum] = new Book(name, author, isbn, read)
     booknum = (parseInt(booknum) +1).toString()
 }
-function newCard(name, author, isbn, read, imgsrc){
+function newCard(book){
     let newcard = document.createElement('div')
     newcard.classList = "user-card"
-    newcard.innerHTML = `<div class="close"><button>&times;</button></div><img src="images.jpg" class="avatar"> <div class="top info">${name} </div><div class="bottom info">${author} </div>`
-    userResults.appendChild(newcard)
-
-    
+    newcard.innerHTML = `<div class="close"><button>&times;</button></div><img src="${book.imgsrc}" class="avatar"> <div class="top info">${book.name} </div><div class="bottom info">${book.author} </div>`
+    userResults.appendChild(newcard)    
 }
 
 
