@@ -39,6 +39,12 @@ const deleteCard = function(e){
     e.target.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode)
 }
 
-closeButtons.forEach(button =>{
-    button.addEventListener('click', deleteCard)
-})
+
+
+keys.forEach(book=>{
+    newCard(defaultLibrary[book])
+    })
+closeButtons = document.querySelectorAll(".close")
+    closeButtons.forEach(button =>{
+        button.addEventListener('click', deleteCard)
+    })

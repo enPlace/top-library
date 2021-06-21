@@ -64,7 +64,7 @@ body{
 }
 .user-card{
     width:165px;
-    height: 225px;
+    height: 255px;
     font-size: 100%;
     /* border: 1px solid black; */
     margin: 10px;
@@ -72,6 +72,7 @@ body{
     transition: all .4s ease;
     background-color: rgb(78, 78, 78);
     position: relative;
+    overflow: hidden;
     
 }
 .user-card:hover {

@@ -71,7 +71,7 @@ const defaultLibrary= {
         author: "Sean Carroll",
         read: "false",
         isbn: "9781524743017",
-        imgsrc: "./images/weschler.jpg",
+        imgsrc: "./images/carroll.jpg",
     }, 
     book5:{
         name: "Gödel, Escher, Bach: An Eternal Golden Braid",
