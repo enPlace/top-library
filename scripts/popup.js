@@ -1,5 +1,9 @@
 const addbookModal = document.getElementById("add-book-modal")
 const booksearchModal = document.getElementById("book-search-modal")
+const booksearchImg = document.getElementById("booksearch-img")
+const booksearchTitle = document.getElementById("booksearch-title")
+const booksearchAuthor = document.getElementById("booksearch-author")
+const booksearchISBN = document.getElementById("booksearch-isbn")
 const overlay = document.getElementById("overlay")
 
 function toggleBookModal(modal){

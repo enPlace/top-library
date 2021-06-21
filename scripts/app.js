@@ -55,7 +55,7 @@ function loadLibrary(library){
         newCard(library[book])
     })
 }
-
+let resultados
 addBookButton.addEventListener('click',async (e)=>{
     e.preventDefault()
     let hasread
@@ -63,11 +63,17 @@ addBookButton.addEventListener('click',async (e)=>{
     let title = newBookForm.title.value
     let author = newBookForm.title.value 
     let isbn = newBookForm.isbn.value
-    toggleBookModal()
-    toggleBookModal(booksearchModal)
+    
     results = await bookSearch(title, author, isbn)
     console.log(results)
+    resultados = results
+    booksearchImg.innerHTML = `<img src=${results.items[0].volumeInfo.imageLinks.thumbnail} alt=""></img>`
+    booksearchTitle.innerHTML = results.items[0].volumeInfo.title
+    booksearchAuthor.innerHTML = results.items[0].volumeInfo.authors
+    booksearchISBN.innerHTML = `ISBN-10: ${results.items[0].volumeInfo.industryIdentifiers[1].identifier}`
     
+    toggleBookModal()
+    toggleBookModal(booksearchModal)
     //myLibrary[booknum] = new Book (booknum, newBookForm.title.value, newBookForm.author.value, hasread)
     //newCard(myLibrary[booknum])
     //booknum = (parseInt(booknum)+1).toString()
