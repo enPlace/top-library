@@ -3,14 +3,16 @@ let myLibrary ={}
 let booknum = "1"
 let closeButtons = document.querySelectorAll(".close")
 let userResults = document.getElementById("user-results")
+const newBookForm = document.getElementById("new-book")
+const addBookButton = document.getElementById("add-book-button")
 //const keys = Object.keys(defaultLibrary)
 
 class Book{
-    constructor(name, author, isbn=false, read=false, imgsrc){
+    constructor(name, author, read=false, isbn=false, imgsrc){
     this.name = name
     this.author = author
-    this.isbn = isbn
     this.read = read
+    this.isbn = isbn
     this.dateAdded = new Date()
     this.imgsrc = imgsrc
     }
@@ -49,7 +51,20 @@ function loadLibrary(library){
     })
 }
 
+addBookButton.addEventListener('click',(e)=>{
+    let hasread
+    if(newBookForm.cbox1.checked){hasread = true}
+    myLibrary[booknum] = new Book (newBookForm.title.value, newBookForm.author.value, hasread)
+    newCard(myLibrary[booknum])
+    booknum = (parseInt(booknum)+1).toString()
+    console.log(myLibrary)
+
+    saveUserLibrary()
+
+})
+
 getUserLibrary()
+
 if(!localStorage.getItem("myLibrary")){
     loadLibrary(defaultLibrary)
     myLibrary = defaultLibrary

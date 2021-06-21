@@ -14,9 +14,10 @@ the object will have the following properties:
         dateCreated: datetime string
     }, 
 
-ok so I have my book constructor, and a way to save user data, get user data. What is next? 
+alright, now the basic memory stuff is set up for the default library. Now for adding 
+to the library. 
 
-Create a new card with that data
-
-delete card function 
-
+maybe easiest thing to do is just update the library,
+increment the booknum
+save the user info
+reload the page. 

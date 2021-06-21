@@ -12,7 +12,7 @@
     <script src="./scripts/app.js" defer></script>
     
     
-    <title>User Info</title>
+    <title>My Bookshelf</title>
     
 </head>
 <body>
@@ -36,7 +36,7 @@
 <div class="modal" id="modal">
     <div class="modal-header"><h1>Add a new book </h1><button class="close-button" onclick="toggleBookModal()">&times;</button></div>
     <br>
-    <form id="new-book">
+    <form id="new-book" autocomplete="off">
         <label for="title" class="title">Title</label>
         <br><br>
         <input type="text" name = "title" id = "title">
@@ -45,9 +45,9 @@
         <br><br>
         <input type="text" name = "author">
         <br><br>
-        <input type="checkbox" id="cbox1" value="first_checkbox"><label> I've already read this book</label>
+        <input type="checkbox" name="cbox1" ><label> I've already read this book</label>
         <br><br>
-        <button type="submit">Add Book</button>
+        <button type="submit" id = "add-book-button" value = "on/off">Add Book</button>
     </form>
 </div>
 <div id="overlay"></div>
