@@ -8,7 +8,8 @@ const addBookButton = document.getElementById("add-book-button")
 //const keys = Object.keys(defaultLibrary)
 
 class Book{
-    constructor(name, author, read=false, isbn=false, imgsrc){
+    constructor(id, name, author, read=false, isbn=false, imgsrc){
+    this.id = id
     this.name = name
     this.author = author
     this.read = read
@@ -44,6 +45,10 @@ const deleteCard = function(e){
     saveUserLibrary()
     e.target.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode)
 }
+function pagereset(){
+    localStorage.clear()
+    booknum = "1"
+}
 function loadLibrary(library){
     const keys = Object.keys(library)
     keys.forEach(book=>{
@@ -54,7 +59,7 @@ function loadLibrary(library){
 addBookButton.addEventListener('click',(e)=>{
     let hasread
     if(newBookForm.cbox1.checked){hasread = true}
-    myLibrary[booknum] = new Book (newBookForm.title.value, newBookForm.author.value, hasread)
+    myLibrary[booknum] = new Book (booknum, newBookForm.title.value, newBookForm.author.value, hasread)
     newCard(myLibrary[booknum])
     booknum = (parseInt(booknum)+1).toString()
     console.log(myLibrary)
