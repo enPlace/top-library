@@ -1,13 +1,19 @@
-const modal = document.getElementById("modal")
+const addbookModal = document.getElementById("add-book-modal")
+const booksearchModal = document.getElementById("book-search-modal")
 const overlay = document.getElementById("overlay")
 
-function toggleBookModal(){
-    if(modal.classList.contains("active")){
-        modal.classList.remove("active")
+function toggleBookModal(modal){
+    if(overlay.classList.contains("active")){
+        current = document.getElementById(overlay.dataset.target)
+        current.classList.remove("active")
         overlay.classList.remove("active")
+        overlay.dataset.target = ""
+        
+        
     }else{
         modal.classList.add("active")
         overlay.classList.add("active")
+        overlay.dataset.target = modal.id
     }
 }
 

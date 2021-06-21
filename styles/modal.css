@@ -41,6 +41,16 @@ button{
     float:left;
     
 }
+#book-search-modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#booksearch-img{
+    width: 150px;
+
+}
 #overlay{
     position: fixed;
     opacity: 0;

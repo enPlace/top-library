@@ -14,10 +14,11 @@ the object will have the following properties:
         dateCreated: datetime string
     }, 
 
-alright, now the basic memory stuff is set up for the default library. Now for adding 
-to the library. 
+now when I add a book, what do I want to do? 
 
-maybe easiest thing to do is just update the library,
-increment the booknum
-save the user info
-reload the page. 
+I want to send the search to google books api, then upon the response, pop up another modal that asks "is this your book?"
+
+if yes, a new book is created, if no, the next book in the volume collection is shown, and a button that says "continue without using search data" or something 
+
+When the user clicks yes, the data from the api response automatically makes a new book object and populates the page 
+

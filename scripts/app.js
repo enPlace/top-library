@@ -56,17 +56,26 @@ function loadLibrary(library){
     })
 }
 
-addBookButton.addEventListener('click',(e)=>{
+addBookButton.addEventListener('click',async (e)=>{
+    e.preventDefault()
     let hasread
     if(newBookForm.cbox1.checked){hasread = true}
-    myLibrary[booknum] = new Book (booknum, newBookForm.title.value, newBookForm.author.value, hasread)
-    newCard(myLibrary[booknum])
-    booknum = (parseInt(booknum)+1).toString()
-    console.log(myLibrary)
-
-    saveUserLibrary()
-
+    let title = newBookForm.title.value
+    let author = newBookForm.title.value 
+    let isbn = newBookForm.isbn.value
+    toggleBookModal()
+    toggleBookModal(booksearchModal)
+    results = await bookSearch(title, author, isbn)
+    console.log(results)
+    
+    //myLibrary[booknum] = new Book (booknum, newBookForm.title.value, newBookForm.author.value, hasread)
+    //newCard(myLibrary[booknum])
+    //booknum = (parseInt(booknum)+1).toString()
+    //console.log(myLibrary)
+    //saveUserLibrary()
 })
+
+
 
 getUserLibrary()
 

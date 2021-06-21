@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/modal.css">
-    <script src="books-api.js"defer></script>
+    <script src="./scripts/books-api.js"defer></script>
     <script src="./scripts/popup.js" defer></script>
     <script src="./scripts/storage.js" defer></script>
     <script src="./scripts/app.js" defer></script>
@@ -28,13 +28,13 @@
             </form>
         </div>
         <div id = "user-results" class="user-results">
-            <div class="user-card add-card" id= "add-card" onclick="toggleBookModal()">
+            <div class="user-card add-card" id= "add-card" onclick="toggleBookModal(addbookModal)">
             <div class = "plus">+</div>
             </div>       
         </div>
     </div>
 
-<div class="modal" id="modal">
+<div class="modal" id="add-book-modal">
     <div class="modal-header"><h1>Add a new book </h1><button class="close-button" onclick="toggleBookModal()">&times;</button></div>
     <br>
     <form id="new-book" autocomplete="off">
@@ -54,6 +54,18 @@
         <br><br>
         <button type="submit" id = "add-book-button" value = "on/off">Add Book</button>
     </form>
+</div>
+<div class="modal" id="book-search-modal">
+    <div class="modal-header"><h1>Is this the book you're looking for? </h1><button class="close-button" onclick="toggleBookModal()">&times;</button></div>
+    <br>
+    <img id ="booksearch-img" src="./images/borges.jpg" alt="">
+    <div id="booksearch-title">Ficciones</div>
+    <div id = "booksearch-author">Jorge Louis borges</div>
+    <div id="booksearch-isbn">ISBN-10: 8426405738</div>
+    <form action="">
+        <button>Yes</button> <button>No</button>
+    </form>
+
 </div>
 <div id="overlay"></div>
 </body>
