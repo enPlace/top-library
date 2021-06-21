@@ -46,6 +46,7 @@ function saveUserLibrary(){
 
 const defaultLibrary= {
     book1:{
+        id: "book1",
         name: "The Philosophy of Jean-Paul Sartre",
         author: "Jean-Paul Sartre",
         read: "true",
@@ -53,6 +54,7 @@ const defaultLibrary= {
         imgsrc: "./images/sartre.jpg"
     }, 
     book2:{
+        id:"book2",
         name: "Boggs:A Comedy of Values",
         author: "Lawrence Weschler  ",
         read:"true",
@@ -60,6 +62,7 @@ const defaultLibrary= {
         imgsrc: "./images/weschler.jpg"
     },
     book3:{
+        id: "book3",
         name: "Ficciones",
         author: "Jorge Louis Borges",
         read: "true",
@@ -67,6 +70,7 @@ const defaultLibrary= {
         imgsrc: "./images/borges.jpg",
     }, 
     book4:{
+        id: "book4",
         name: "Something Deeply Hidden: Quantum Worlds and the Emergence of Spacetime",
         author: "Sean Carroll",
         read: "false",
@@ -74,6 +78,7 @@ const defaultLibrary= {
         imgsrc: "./images/carroll.jpg",
     }, 
     book5:{
+        id: "book5",
         name: "Gödel, Escher, Bach: An Eternal Golden Braid",
         author: "Douglas Hofstadter",
         read: "true",
@@ -81,6 +86,7 @@ const defaultLibrary= {
         imgsrc: "./images/hofstadter.jpg",
 },
     book6:{
+        id: "book6",
         name: "Cracking the Coding Interview", 
         author: "Gale Laakmann McDowell",
         read: "false",

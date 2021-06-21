@@ -3,7 +3,7 @@ let myLibrary ={}
 let booknum = "1"
 let closeButtons = document.querySelectorAll(".close")
 let userResults = document.getElementById("user-results")
-const keys = Object.keys(defaultLibrary)
+//const keys = Object.keys(defaultLibrary)
 
 class Book{
     constructor(name, author, isbn=false, read=false, imgsrc){
@@ -31,20 +31,29 @@ function newCard(book){
     newcard.classList = "user-card"
     newcard.innerHTML = `<div class="close"><button>&times;</button></div><img src="${book.imgsrc}" class="avatar"> <div class="top info">${book.name} </div><div class="bottom info">${book.author} </div>`
     userResults.appendChild(newcard)    
+    newcard.id = book.id
+    const closeButton = newcard.querySelectorAll(".close")[0]
+    closeButton.addEventListener('click', deleteCard)
 }
-
-
 const deleteCard = function(e){
-    console.log(e.target.parentNode.parentNode.parentNode)
+    console.log(e.target.parentNode.parentNode)
+    const card = e.target.parentNode.parentNode
+    delete myLibrary[card.id]
+    saveUserLibrary()
     e.target.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode)
 }
-
-
-
-keys.forEach(book=>{
-    newCard(defaultLibrary[book])
+function loadLibrary(library){
+    const keys = Object.keys(library)
+    keys.forEach(book=>{
+        newCard(library[book])
     })
-closeButtons = document.querySelectorAll(".close")
-    closeButtons.forEach(button =>{
-        button.addEventListener('click', deleteCard)
-    })
+}
+
+getUserLibrary()
+if(!localStorage.getItem("myLibrary")){
+    loadLibrary(defaultLibrary)
+    myLibrary = defaultLibrary
+    saveUserLibrary()
+}else{
+    loadLibrary(myLibrary)
+}

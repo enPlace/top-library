@@ -17,86 +17,21 @@
 </head>
 <body>
     <div class="wrapper">
-    <div id="search-bar" class="search-bar">
-        <form action="">
-            <input type="text" placeholder="Search for a user...">
-        </form>
+        <div id="search-bar" class="search-bar">
+            <form action="">
+                <input type="text" placeholder="Search for a user...">
+            </form>
         
-       
+            <form action="">
+                <button type="submit"onClick="localStorage.clear()">Reset</button>
+            </form>
+        </div>
+        <div id = "user-results" class="user-results">
+            <div class="user-card add-card" id= "add-card" onclick="toggleBookModal()">
+            <div class = "plus">+</div>
+            </div>       
+        </div>
     </div>
-    <div id = "user-results" class="user-results">
-        <div class="user-card add-card" id= "add-card" onclick="toggleBookModal()">
-           <div class = "plus">+</div>
-       </div>
-       <!-- <div class="user-card">
-        <div class="close"><button>&times;</button></div>
-        <img src="./images/sartre.jpg" class="avatar"> 
-       <div class="top info">FirstName </div>
-       <div class="bottom info">LastName </div>
-   </div>
-   <div class="user-card">
-    <div class="close"><button>&times;</button></div>
-    <img src="./images/sartre.jpg" class="avatar"> 
-   <div class="top info">BookTitle</div>
-   <div class="bottom info"> Author Name</div>
-</div>
-<div class="user-card">
-    <div class="close"><button>&times;</button></div>
-    <img src="./images/sartre.jpg" class="avatar"> 
-   <div class="top info">BookTitle</div>
-   <div class="bottom info"> Author Name</div>
-</div>
-<div class="user-card">
-    <div class="close"><button>&times;</button></div>
-    <img src="./images/sartre.jpg" class="avatar"> 
-   <div class="top info">BookTitle</div>
-   <div class="bottom info"> Author Name</div>
-</div>
-<div class="user-card">
-    <div class="close"><button>&times;</button></div>
-    <img src="./images/sartre.jpg" class="avatar"> 
-   <div class="top info">BookTitle</div>
-   <div class="bottom info"> Author Name</div>
-</div>
-<div class="user-card">
-    <div class="close"><button>&times;</button></div>
-    <img src="./images/sartre.jpg" class="avatar"> 
-   <div class="top info">BookTitle</div>
-   <div class="bottom info"> Author Name</div>
-</div>
-<div class="user-card">
-    <div class="close"><button>&times;</button></div>
-    <img src="./images/sartre.jpg" class="avatar"> 
-   <div class="top info">BookTitle</div>
-   <div class="bottom info"> Author Name</div>
-</div>
-<div class="user-card">
-    <div class="close"><button>&times;</button></div>
-    <img src="./images/sartre.jpg" class="avatar"> 
-   <div class="top info">BookTitle</div>
-   <div class="bottom info"> Author Name</div>
-</div>
-<div class="user-card">
-    <div class="close"><button>&times;</button></div>
-    <img src="./images/sartre.jpg" class="avatar"> 
-   <div class="top info">BookTitle</div>
-   <div class="bottom info"> Author Name</div>
-</div>
-<div class="user-card">
-    <div class="close"><button>&times;</button></div>
-    <img src="./images/sartre.jpg" class="avatar"> 
-   <div class="top info">BookTitle</div>
-   <div class="bottom info"> Author Name</div>
-</div>
-<div class="user-card">
-    <div class="close"><button>&times;</button></div>
-    <img src="./images/sartre.jpg" class="avatar"> 
-   <div class="top info">BookTitle</div>
-   <div class="bottom info"> Author Name</div>
-</div>
- -->
-    </div>
-</div>
 
 <div class="modal" id="modal">
     <div class="modal-header"><h1>Add a new book </h1><button class="close-button" onclick="toggleBookModal()">&times;</button></div>
