@@ -61,18 +61,7 @@ let currentAuthor
 let currentISBN
 let currentImgsrc
 let hasread
-async function populateSearchModal(title, author, isbn){
-    results = await bookSearch(`${title} ${author} ${isbn}`)
-    resultados = results
-    booksearchImg.innerHTML = `<img src=${results.items[0].volumeInfo.imageLinks.thumbnail} alt=""></img>`
-    booksearchTitle.innerHTML = results.items[0].volumeInfo.title
-    booksearchAuthor.innerHTML = results.items[0].volumeInfo.authors
-    booksearchISBN.innerHTML = `ISBN-10: ${results.items[0].volumeInfo.industryIdentifiers[1].identifier}`
-    currentTitle = results.items[0].volumeInfo.title
-    currentAuthor = results.items[0].volumeInfo.authors
-    currentISBN = results.items[0].volumeInfo.industryIdentifiers[1].identifier
-    currentImgsrc = results.items[0].volumeInfo.imageLinks.thumbnail
-}
+
 addBookButton.addEventListener('click',async (e)=>{
     e.preventDefault()
     if(newBookForm.cbox1.checked){hasread = true}else{hasread = false}
@@ -85,17 +74,28 @@ addBookButton.addEventListener('click',async (e)=>{
     toggleBookModal(booksearchModal)
 })
 
+async function populateSearchModal(title, author, isbn){
+    results = await bookSearch(`${title} ${author} ${isbn}`)
+    resultados = results
+    booksearchImg.innerHTML = `<img src=${results.items[0].volumeInfo.imageLinks.thumbnail} alt=""></img>`
+    booksearchTitle.innerHTML = results.items[0].volumeInfo.title
+    booksearchAuthor.innerHTML = results.items[0].volumeInfo.authors
+    booksearchISBN.innerHTML = `ISBN-10: ${results.items[0].volumeInfo.industryIdentifiers[1].identifier}`
+    currentTitle = results.items[0].volumeInfo.title
+    currentAuthor = results.items[0].volumeInfo.authors
+    currentISBN = results.items[0].volumeInfo.industryIdentifiers[1].identifier
+    currentImgsrc = results.items[0].volumeInfo.imageLinks.thumbnail
+}
+
 const confirmButton = document.getElementById("confirm")
 confirmButton.addEventListener('click', (e)=>{
     newBookObject(currentTitle, currentAuthor, currentISBN, hasread, currentImgsrc )
     saveUserLibrary()
+})
 
-
-
-    /* function newBookObject(name, author, isbn, read, imgsrc){
-    myLibrary[booknum] = new Book(name, author, isbn, read, imgsrc)
-    booknum = (parseInt(booknum) +1).toString() */
-    
+const searchAgainButton = document.getElementById("search-again-button")
+searchAgainButton.addEventListener('click', (e)=>{
+     
 })
 
 

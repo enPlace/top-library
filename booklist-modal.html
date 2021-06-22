@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <script src="./scripts/books-api.js"defer></script>
+    <script src="./scripts/popup.js" defer></script>
+    <script src="./scripts/storage.js" defer></script>
+    <script src="./scripts/app.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="modal active" id="book-list-modal">
+        <div class="modal-header"><h1>Here are some other books that may match your search:</h1><button class="close-button" onclick="toggleBookModal()">&times;</button></div>
+        <br>
+        <div id = "book-results-container">
+          
+            <div class="list-item-container">
+                <div class="list-item-title">Ficcioness</div><div class="list-item-author">Jorge Louis Borges</div><div class="list-item-thumb"><img src="http://books.google.com/books/content?id=E1SCCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api" alt=""></div>
+            </div>
+            <div class="list-item-container">
+                <div class="list-item-title">Ficcioness</div><div class="list-item-author">Jorge Louis Borges</div><div class="list-item-thumb"><img src="http://books.google.com/books/content?id=E1SCCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api" alt=""></div>
+            </div>
+            <div class="list-item-container">
+                <div class="list-item-title">Ficcioness</div><div class="list-item-author">Jorge Louis Borges</div><div class="list-item-thumb"><img src="http://books.google.com/books/content?id=E1SCCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api" alt=""></div>
+            </div>
+            <div class="list-item-container">
+                <div class="list-item-title">Ficcioness</div><div class="list-item-author">Jorge Louis Borges</div><div class="list-item-thumb"><img src="http://books.google.com/books/content?id=E1SCCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api" alt=""></div>
+            </div>
+            <div class="list-item-container">
+                <div class="list-item-title">Ficcioness</div><div class="list-item-author">Jorge Louis Borges</div><div class="list-item-thumb"><img src="http://books.google.com/books/content?id=E1SCCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api" alt=""></div>
+            </div>
+            <div class="list-item-container">
+                <div class="list-item-title">Ficcioness</div><div class="list-item-author">Jorge Louis Borges</div><div class="list-item-thumb"><img src="http://books.google.com/books/content?id=E1SCCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api" alt=""></div>
+            </div>
+            <div class="list-item-container">
+                <div class="list-item-title">Ficcioness</div><div class="list-item-author">Jorge Louis Borges</div><div class="list-item-thumb"><img src="http://books.google.com/books/content?id=E1SCCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api" alt=""></div>
+            </div>
+            <div class="list-item-container">
+                <div class="list-item-title">Ficcioness</div><div class="list-item-author">Jorge Louis Borges</div><div class="list-item-thumb"><img src="http://books.google.com/books/content?id=E1SCCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api" alt=""></div>
+            </div>
+            <div class="list-item-container">
+                <div class="list-item-title">Ficcioness</div><div class="list-item-author">Jorge Louis Borges</div><div class="list-item-thumb"><img src="http://books.google.com/books/content?id=E1SCCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api" alt=""></div>
+            </div>
+            <div class="list-item-container">
+                <div class="list-item-title">Ficcioness</div><div class="list-item-author">Jorge Louis Borges</div><div class="list-item-thumb"><img src="http://books.google.com/books/content?id=E1SCCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api" alt=""></div>
+            </div>
+
+        </div>
+        <form action="">
+            <button id = "confirm">Yes</button> <button id = "search-again-button">No</button>
+        </form>
+    
+    </div>
+    
+</body>
+</html>

@@ -46,10 +46,41 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 #booksearch-img img{
     width: 150px;
 
+}
+#book-list-modal{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 500px;
+    
+}
+#book-list-modal form{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+#book-results-container{
+    overflow-y: scroll;
+}
+.list-item-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px;
+}
+.list-item-container img{
+    width: 50px;
+}
+
+.list-item-container .list-item-author{
+    max-width: 70px;
+    flex-wrap: wrap;
 }
 #overlay{
     position: fixed;
@@ -64,4 +95,16 @@ button{
 #overlay.active{
     opacity: 1; 
     pointer-events: all;
+}
+
+
+@media only screen and (max-width: 459px) {
+
+    #book-list-modal{
+        max-height: 375px;
+        padding: 10px;
+    }
+    h1{
+        font-size: 20px !important;
+    }
 }
