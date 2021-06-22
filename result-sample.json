@@ -1,0 +1,752 @@
+{
+    "kind": "books#volumes",
+    "totalItems": 557,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "vphgzQEACAAJ",
+        "etag": "HUikPhHxeCk",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/vphgzQEACAAJ",
+        "volumeInfo": {
+          "title": "Harry Potter Y El Prisionero de Azkaban (Harry Potter 3) / Harry Potter and the Prisoner of Azkaban",
+          "authors": [
+            "J K Rowling"
+          ],
+          "publisher": "Salamandra Bolsillo",
+          "publishedDate": "2020-05-12",
+          "description": "Harry Potter y el prisionero de Azkaban es la tercera novela de la ya clásica serie fantástica de la autora británica J.K. Rowling. «Bienvenido al autobús noctámbulo, transporte de emergencia para el brujo abandonado a su suerte. Levante la varita, suba a bordo y lo llevaremos a donde quiera.» Cuando el autobús noctámbulo irrumpe en una calle oscura y frena con fuertes chirridos delante de Harry, comienza para él un nuevo curso en Hogwarts, lleno de acontecimientos extraordinarios. Sirius Black, asesino y seguidor de lord Voldemort, se ha fugado, y dicen que va en busca de Harry. En su primera clase de Adivinación, la profesora Trelawney ve un augurio de muerte en las hojas de té de la taza de Harry... Pero quizá lo más aterrador sean los dementores que patrullan por los jardines del colegio, capaces de sorberte el alma con su beso... ENGLISH DESCRIPTION For twelve long years, the dread fortress of Azkaban held an infamous prisoner named Sirius Black. Convicted of killing thirteen people with a single curse, he was said to be the heir apparent to the Dark Lord, Voldemort. Now he has escaped, leaving only two clues as to where he might be headed: Harry Potter's defeat of You-Know-Who was Black's downfall as well. And the Azkban guards heard Black muttering in his sleep, \"He's at Hogwarts...he's at Hogwarts.\" Harry Potter isn't safe, not even within the walls of his magical school, surrounded by his friends. Because on top of it all, there may well be a traitor in their midst.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "1644732092"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781644732090"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 360,
+          "printType": "BOOK",
+          "averageRating": 5,
+          "ratingsCount": 1,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=vphgzQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=vphgzQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "un",
+          "previewLink": "http://books.google.com.ar/books?id=vphgzQEACAAJ&dq=harry+potter+prisoner&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com.ar/books?id=vphgzQEACAAJ&dq=harry+potter+prisoner&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_Y_El_Prisionero_de_Azkaban.html?hl=&id=vphgzQEACAAJ"
+        },
+        "saleInfo": {
+          "country": "AR",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "AR",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=vphgzQEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "De la prisión de Azkaban se ha escapado un terrible villano, Sirius Black, un asesino en serie que fue cómplice de lord Voldemort y que, dicen los rumores, quiere vengarse de Harry por haber destruido a su maestro."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "K61izgEACAAJ",
+        "etag": "srkI2uPi46w",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/K61izgEACAAJ",
+        "volumeInfo": {
+          "title": "Harry Potter Y El Prisionero de Azkaban / Harry Potter and the Prisoner of Azkaban",
+          "authors": [
+            "J. K. Rowling"
+          ],
+          "publisher": "Salamandra Infantil Y Juvenil",
+          "publishedDate": "2021-08-24",
+          "description": "\"Harry Potter y el prisionero de Azkaban es la tercera novela de la ya clásica serie fantástica de la autora británica J.K. Rowling. «Bienvenido al autobús noctámbulo, transporte de emergencia para el brujo abandonado a su suerte. Levante la varita, suba a bordo y lo llevaremos a donde quiera.» Cuando el autobús noctámbulo irrumpe en una calle oscura y frena con fuertes chirridos delante de Harry, comienza para él un nuevo curso en Hogwarts, lleno de acontecimientos extraordinarios. Sirius Black, asesino y seguidor de lord Voldemort, se ha fugado, y dicen que va en busca de Harry. En su primera clase de Adivinación, la profesora Trelawney ve un augurio de muerte en las hojas de té de la taza de Harry... Pero quizá lo más aterrador sean los dementores que patrullan por los jardines del colegio, capaces de sorberte el alma con su beso...\" ENGLISH DESCRIPTION Harry Potter and the Prisoner of Azkaban is the third volume of British author J.K. Rowling's now classic series of fantasy novels. \"Welcome to the night bus, an emergency transport for any wizard abandoned to their own fate. Raise your wand, get on board, and we'll take you wherever you need to go.\" When the night bus bursts into a dark street and brakes with a loud screech in front of Harry, marks the beginning of a new year at Hogwarts, full of extraordinary events. Sirius Black, a murderer and follower of dark Lord Voldemort, has escaped, and they say he is looking for Harry. In Harry's first Divination class, Professor Trelawney sees an omen of death in Harry's the tea leaves... But perhaps most terrifying are the Dementors who patrol the school gardens, willing to suck your soul with just a kiss.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "6073193912"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9786073193917"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 360,
+          "printType": "BOOK",
+          "categories": [
+            "Juvenile Fiction"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=K61izgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=K61izgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "es",
+          "previewLink": "http://books.google.com.ar/books?id=K61izgEACAAJ&dq=harry+potter+prisoner&hl=&cd=2&source=gbs_api",
+          "infoLink": "http://books.google.com.ar/books?id=K61izgEACAAJ&dq=harry+potter+prisoner&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_Y_El_Prisionero_de_Azkaban.html?hl=&id=K61izgEACAAJ"
+        },
+        "saleInfo": {
+          "country": "AR",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "AR",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=K61izgEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "&quot; ENGLISH DESCRIPTION Harry Potter and the Prisoner of Azkaban is the third volume of British author J.K. Rowling&#39;s now classic series of fantasy novels."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "wHlDzHnt6x0C",
+        "etag": "OnwYvxqrWsk",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/wHlDzHnt6x0C",
+        "volumeInfo": {
+          "title": "Harry Potter and the Prisoner of Azkaban",
+          "authors": [
+            "J.K. Rowling"
+          ],
+          "publisher": "Pottermore Publishing",
+          "publishedDate": "2015-12-08",
+          "description": "'Welcome to the Knight Bus, emergency transport for the stranded witch or wizard. Just stick out your wand hand, step on board and we can take you anywhere you want to go.' When the Knight Bus crashes through the darkness and screeches to a halt in front of him, it's the start of another far from ordinary year at Hogwarts for Harry Potter. Sirius Black, escaped mass-murderer and follower of Lord Voldemort, is on the run - and they say he is coming after Harry. In his first ever Divination class, Professor Trelawney sees an omen of death in Harry's tea leaves... But perhaps most terrifying of all are the Dementors patrolling the school grounds, with their soul-sucking kiss... Having now become classics of our time, the Harry Potter ebooks never fail to bring comfort and escapism to readers of all ages. With its message of hope, belonging and the enduring power of truth and love, the story of the Boy Who Lived continues to delight generations of new readers.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781781100233"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1781100233"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 435,
+          "printType": "BOOK",
+          "categories": [
+            "Fiction"
+          ],
+          "averageRating": 4.5,
+          "ratingsCount": 2173,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "1.17.17.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=wHlDzHnt6x0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=wHlDzHnt6x0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "un",
+          "previewLink": "http://books.google.com.ar/books?id=wHlDzHnt6x0C&printsec=frontcover&dq=harry+potter+prisoner&hl=&cd=3&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=wHlDzHnt6x0C&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=wHlDzHnt6x0C"
+        },
+        "saleInfo": {
+          "country": "AR",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 104,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amount": 104,
+            "currencyCode": "ARS"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=wHlDzHnt6x0C&rdid=book-wHlDzHnt6x0C&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 104000000,
+                "currencyCode": "ARS"
+              },
+              "retailPrice": {
+                "amountInMicros": 104000000,
+                "currencyCode": "ARS"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "AR",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.ar/books/download/Harry_Potter_and_the_Prisoner_of_Azkaban-sample-epub.acsm?id=wHlDzHnt6x0C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.ar/books/download/Harry_Potter_and_the_Prisoner_of_Azkaban-sample-pdf.acsm?id=wHlDzHnt6x0C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=wHlDzHnt6x0C&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "With its message of hope, belonging and the enduring power of truth and love, the story of the Boy Who Lived continues to delight generations of new readers."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "H47xwQEACAAJ",
+        "etag": "r+8CvG4yfv4",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/H47xwQEACAAJ",
+        "volumeInfo": {
+          "title": "Harry Potter and the Prisoner of Azkaban - Gryffindor Edition",
+          "authors": [
+            "J. K. Rowling"
+          ],
+          "publisher": "Bloomsbury Children's Books",
+          "publishedDate": "2019-06-13",
+          "description": "Let the magic of J.K. Rowling's classic Harry Potter series take you back to Hogwarts School of Witchcraft and Wizardry. Issued to mark the 20th anniversary of first publication ofHarry Potter and the Prisoner of Azkaban, this irresistible Gryffindor House Edition celebrates the noble character of the Hogwarts house famed for its courage, bravery and determination. Harry's third year at Hogwarts is packed with thrilling Gryffindor moments, including the appearance four of its most memorable alumni, Messrs Moony, Wormtail, Padfoot and Prongs! With vibrant sprayed edges in Gryffindor house livery, the book features beautiful house-themed cover artwork with intricate gold foiling. With an exciting, bespoke introduction exploring the history of Gryffindor House, and exclusive insights into the use of the Patronus Charm by favourite Gryffindor characters, the book also boasts a spectacular image by Kate Greenaway winner Levi Pinfold of Hermione Granger conjuring her Patronus. All seven books in the series will be issued in these highly collectable, beautifully crafted House Editions, designed to be treasured and read for years to come. A must-have for anyone who has ever imagined sitting under the Sorting Hat in the Great Hall at Hogwarts waiting to hear the words, 'Better be GRYFFINDOR!'",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "152660616X"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781526606167"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 480,
+          "printType": "BOOK",
+          "categories": [
+            "Children's fiction"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=H47xwQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=H47xwQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "un",
+          "previewLink": "http://books.google.com.ar/books?id=H47xwQEACAAJ&dq=harry+potter+prisoner&hl=&cd=4&source=gbs_api",
+          "infoLink": "http://books.google.com.ar/books?id=H47xwQEACAAJ&dq=harry+potter+prisoner&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_and_the_Prisoner_of_Azkaban.html?hl=&id=H47xwQEACAAJ"
+        },
+        "saleInfo": {
+          "country": "AR",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "AR",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=H47xwQEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "... With an exciting, bespoke introduction exploring the history of Gryffindor House, and exclusive insights into the use of the Patronus Charm by favourite Gryffindor characters, the book also boasts a spectacular image by ."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "ldj1wQEACAAJ",
+        "etag": "SruK985Nggk",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/ldj1wQEACAAJ",
+        "volumeInfo": {
+          "title": "Harry Potter and the Prisoner of Azkaban - Slytherin Edition",
+          "authors": [
+            "J. K. Rowling"
+          ],
+          "publisher": "Bloomsbury Children's Books",
+          "publishedDate": "2019-06-13",
+          "description": "Let the magic of J.K. Rowling's classic Harry Potter series take you back to Hogwarts School of Witchcraft and Wizardry. Issued to mark the 20th anniversary of first publication ofHarry Potter and the Prisoner of Azkaban, this irresistible Slytherin House Edition celebrates the noble character of the Hogwarts house famed for its pride, ambition and cunning. Harry's third year at Hogwarts is packed with thrilling Slytherin moments, including Draco Malfoy's typically sneaky attempts to sabotage the Gryffindor Seeker ... With vibrant sprayed edges in Slytherin house livery, the book features beautiful house-themed cover artwork with intricate gold foiling. With an exciting, bespoke introduction exploring the history of Slytherin House, and exclusive insights into the use of the Patronus Charm by favourite Slytherin characters, the book also boasts a spectacular image by Kate Greenaway winner Levi Pinfold of Severus Snape conjuring his Patronus. All seven books in the series will be issued in these highly collectable, beautifully crafted House Editions, designed to be treasured and read for years to come. A must-have for anyone who has ever imagined sitting under the Sorting Hat in the Great Hall at Hogwarts waiting to hear the words, 'Better be SLYTHERIN!'",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "1526606224"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781526606228"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 461,
+          "printType": "BOOK",
+          "categories": [
+            "Children's fiction"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=ldj1wQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=ldj1wQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "un",
+          "previewLink": "http://books.google.com.ar/books?id=ldj1wQEACAAJ&dq=harry+potter+prisoner&hl=&cd=5&source=gbs_api",
+          "infoLink": "http://books.google.com.ar/books?id=ldj1wQEACAAJ&dq=harry+potter+prisoner&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_and_the_Prisoner_of_Azkaban.html?hl=&id=ldj1wQEACAAJ"
+        },
+        "saleInfo": {
+          "country": "AR",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "AR",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=ldj1wQEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Tragic revelations, heartwarming surprises, and high-stakes magical adventures await the boy wizard in this funny and poignant third instalment of the beloved series."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "whn5wQEACAAJ",
+        "etag": "jVLsSlvzipA",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/whn5wQEACAAJ",
+        "volumeInfo": {
+          "title": "Harry Potter and the Prisoner of Azkaban - Hufflepuff Edition",
+          "authors": [
+            "J. K. Rowling"
+          ],
+          "publisher": "Bloomsbury Children's Books",
+          "publishedDate": "2019-06-13",
+          "description": "Let the magic of J.K. Rowling's classic Harry Potter series take you back to Hogwarts School of Witchcraft and Wizardry. Issued to mark the 20th anniversary of first publication ofHarry Potter and the Prisoner of Azkaban, this irresistible Hufflepuff House Edition celebrates the noble character of the Hogwarts house famed for its dedication, patience and loyalty. Harry's third year at Hogwarts is packed with thrilling Hufflepuff moments, including the appearance of Quidditch captain - and Hufflepuff heart-throb - Cedric Diggory! With vibrant sprayed edges in Hufflepuff house livery, the book features beautiful house-themed cover artwork with intricate silver foiling. With an exciting, bespoke introduction exploring the history of Hufflepuff House, and exclusive insights into the use of the Patronus Charm by favourite Hufflepuff characters, the book also boasts a spectacular image by Kate Greenaway winner Levi Pinfold of Luna Lovegood conjuring her Patronus. All seven books in the series will be issued in these highlycollectable, beautifully crafted House Editions, designed to be treasured and read for years to come. A must-have for anyone who has ever imagined sitting under the Sorting Hat in the Great Hall at Hogwarts waiting to hear the words, 'Better be HUFFLEPUFF!'",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "1526606208"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781526606204"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 465,
+          "printType": "BOOK",
+          "categories": [
+            "Children's fiction"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=whn5wQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=whn5wQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "un",
+          "previewLink": "http://books.google.com.ar/books?id=whn5wQEACAAJ&dq=harry+potter+prisoner&hl=&cd=6&source=gbs_api",
+          "infoLink": "http://books.google.com.ar/books?id=whn5wQEACAAJ&dq=harry+potter+prisoner&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_and_the_Prisoner_of_Azkaban.html?hl=&id=whn5wQEACAAJ"
+        },
+        "saleInfo": {
+          "country": "AR",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "AR",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=whn5wQEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Tragic revelations, heartwarming surprises, and high-stakes magical adventures await the boy wizard in this funny and poignant third instalment of the beloved series."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "5p_iwQEACAAJ",
+        "etag": "tgmKf/gsRNI",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/5p_iwQEACAAJ",
+        "volumeInfo": {
+          "title": "Harry Potter and the Prisoner of Azkaban - Ravenclaw Edition",
+          "authors": [
+            "J. K. Rowling"
+          ],
+          "publisher": "Bloomsbury Children's Books",
+          "publishedDate": "2019-06-13",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "1526606194"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781526606198"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 480,
+          "printType": "BOOK",
+          "categories": [
+            "Juvenile Fiction"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=5p_iwQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=5p_iwQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "un",
+          "previewLink": "http://books.google.com.ar/books?id=5p_iwQEACAAJ&dq=harry+potter+prisoner&hl=&cd=7&source=gbs_api",
+          "infoLink": "http://books.google.com.ar/books?id=5p_iwQEACAAJ&dq=harry+potter+prisoner&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_and_the_Prisoner_of_Azkaban.html?hl=&id=5p_iwQEACAAJ"
+        },
+        "saleInfo": {
+          "country": "AR",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "AR",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=5p_iwQEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "Wlp0nAEACAAJ",
+        "etag": "D6/mB7hMRQE",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/Wlp0nAEACAAJ",
+        "volumeInfo": {
+          "title": "Harry Potter and the Prisoner of Azkaban",
+          "authors": [
+            "J. K. Rowling"
+          ],
+          "publisher": "Turtleback",
+          "publishedDate": "2013-08-27",
+          "description": "Sequel to: Harry Potter and the Chamber of Secrets.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "0606323473"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9780606323475"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 435,
+          "printType": "BOOK",
+          "categories": [
+            "Juvenile Fiction"
+          ],
+          "averageRating": 4.5,
+          "ratingsCount": 2122,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=Wlp0nAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=Wlp0nAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "un",
+          "previewLink": "http://books.google.com.ar/books?id=Wlp0nAEACAAJ&dq=harry+potter+prisoner&hl=&cd=8&source=gbs_api",
+          "infoLink": "http://books.google.com.ar/books?id=Wlp0nAEACAAJ&dq=harry+potter+prisoner&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_and_the_Prisoner_of_Azkaban.html?hl=&id=Wlp0nAEACAAJ"
+        },
+        "saleInfo": {
+          "country": "AR",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "AR",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=Wlp0nAEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Sequel to: Harry Potter and the Chamber of Secrets."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "u3mzAQAACAAJ",
+        "etag": "vpsP/ikPWDY",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/u3mzAQAACAAJ",
+        "volumeInfo": {
+          "title": "Harry Potter and the Prisoner of Azkaban: The Illustrated Edition",
+          "authors": [
+            "J. K. Rowling"
+          ],
+          "publisher": "Arthur A. Levine Books",
+          "publishedDate": "2017-10-03",
+          "description": "For twelve long years, the dread fortress of Azkaban held an infamous prisoner named Sirius Black. Convicted of killing thirteen people with a single curse, he was said to be the heir apparent to the Dark Lord, Voldemort. Now he has escaped, leaving only two clues as to where he might be headed: Harry Potter's defeat of You-Know-Who was Black's downfall as well. And the Azkaban guards heard Black muttering in his sleep, \"He's at Hogwarts . . . he's at Hogwarts.\" Harry Potter isn't safe, not even within the walls of his magical school, surrounded by his friends. Because on top of it all, there may well be a traitor in their midst.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "0545791340"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9780545791342"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 336,
+          "printType": "BOOK",
+          "categories": [
+            "Juvenile Fiction"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=u3mzAQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=u3mzAQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "un",
+          "previewLink": "http://books.google.com.ar/books?id=u3mzAQAACAAJ&dq=harry+potter+prisoner&hl=&cd=9&source=gbs_api",
+          "infoLink": "http://books.google.com.ar/books?id=u3mzAQAACAAJ&dq=harry+potter+prisoner&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_and_the_Prisoner_of_Azkaban.html?hl=&id=u3mzAQAACAAJ"
+        },
+        "saleInfo": {
+          "country": "AR",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "AR",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=u3mzAQAACAAJ&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "During his third year at Hogwarts School of Witchcraft and Wizardry, Harry Potter must confront the devious and dangerous wizard responsible for his parents&#39; deaths."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "vfQDMQAACAAJ",
+        "etag": "CmH1Y5BuhXk",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/vfQDMQAACAAJ",
+        "volumeInfo": {
+          "title": "Harry Potter and the Prisoner of Azkaban",
+          "subtitle": "Deluxe Illustrated Slipcase Edition",
+          "authors": [
+            "J. K. Rowling"
+          ],
+          "publishedDate": "2017-10-03",
+          "description": "Celebrate 20 years of Harry Potter magic!Prepare to be spellbound by Jim Kay's dazzling full-colour illustrations in this stunning new collector's edition of Harry Potter and the Prisoner of Azkaban. An extraordinary creative achievement by an extraordinary talent, Greenaway Medal winner Kay's inspired reimagining of J.K. Rowling's classic series has captured a devoted following worldwide. Breathtaking scenes and unforgettable characters - including Sirius Black, Remus Lupin and Professor Trelawney - await inside as Harry, now in his third year at Hogwarts School of Witchcraft and Wizardry, faces Dementors, death omens and - of course - danger.This beautiful, deluxe edition features an opulent page size and an exclusive pull-out double gatefold; intricate foiled line art by Jim Kay on the real cloth cover and slipcase; gilt edges on premium grade paper; head and tail bands and two ribbon markers - the ultimate must-have edition for any Potter fan, collector or bibliophile.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "1408884763"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781408884768"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 336,
+          "printType": "BOOK",
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=vfQDMQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=vfQDMQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "un",
+          "previewLink": "http://books.google.com.ar/books?id=vfQDMQAACAAJ&dq=harry+potter+prisoner&hl=&cd=10&source=gbs_api",
+          "infoLink": "http://books.google.com.ar/books?id=vfQDMQAACAAJ&dq=harry+potter+prisoner&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_and_the_Prisoner_of_Azkaban.html?hl=&id=vfQDMQAACAAJ"
+        },
+        "saleInfo": {
+          "country": "AR",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "AR",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=vfQDMQAACAAJ&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Breathtaking scenes and unforgettable characters - including Sirius Black, Remus Lupin and Professor Trelawney - await inside as Harry, now in his third year at Hogwarts School of Witchcraft and Wizardry, faces Dementors, death omens and - ..."
+        }
+      }
+    ]
+  }
