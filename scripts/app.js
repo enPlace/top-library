@@ -93,9 +93,11 @@ confirmButton.addEventListener('click', (e)=>{
     saveUserLibrary()
 })
 
-const searchAgainButton = document.getElementById("search-again-button")
-searchAgainButton.addEventListener('click', (e)=>{
-     
+const showAllResultsButton = document.getElementById("show-all-results-button")
+showAllResultsButton.addEventListener('click', (e)=>{
+    e.preventDefault()
+     toggleBookModal()
+     toggleBookModal(bookListModal)
 })
 
 

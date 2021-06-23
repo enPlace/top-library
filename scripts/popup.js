@@ -4,6 +4,8 @@ const booksearchImg = document.getElementById("booksearch-img")
 const booksearchTitle = document.getElementById("booksearch-title")
 const booksearchAuthor = document.getElementById("booksearch-author")
 const booksearchISBN = document.getElementById("booksearch-isbn")
+
+const bookListModal = document.getElementById("book-list-modal")
 const overlay = document.getElementById("overlay")
 
 function toggleBookModal(modal){
