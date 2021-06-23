@@ -36,16 +36,23 @@ function populateResultsList(){
         }else{
             newListItemContainer.innerHTML = `<div class="list-item-title">${result.volumeInfo.title}</div><div class="list-item-author">${result.volumeInfo.authors}</div><div class="list-item-thumb">No image available</div>`
         }
-        newListItemContainer.addEventListener('click', (e)=>{
+        newListItemContainer.addEventListener('click', async(e)=>{
             console.log("working")
             console.log(e.target.dataset.target)
             i = e.target.dataset.target
-            try{
+            let title= resultados.items[i].volumeInfo.title
+            let author = resultados.items[i].volumeInfo.authors
+            let isbn = resultados.items[i].volumeInfo.industryIdentifiers[0].identifier
+            await populateSearchModal(title, author, isbn)
+    
+    toggleBookModal()
+    toggleBookModal(booksearchModal)
+            /* try{
                 newBookObject(resultados.items[i].volumeInfo.title, resultados.items[i].volumeInfo.authors, resultados.items[i].volumeInfo.industryIdentifiers[0].identifier, hasread, resultados.items[i].volumeInfo.imageLinks.thumbnail )
             }catch{
                 newBookObject(resultados.items[i].volumeInfo.title, resultados.items[i].volumeInfo.authors, resultados.items[i].volumeInfo.industryIdentifiers[0].identifier, hasread, imgsrc = false)
             }
-            saveUserLibrary()
+            saveUserLibrary() */
             
 
             /* if(resultados.items[i].volumeInfo.imageLinks){
