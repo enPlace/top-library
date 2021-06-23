@@ -41,9 +41,9 @@ function populateResultsList(){
             console.log(e.target.dataset.target)
             i = e.target.dataset.target
             try{
-                newBookObject(resultados.items[i].volumeInfo.title, resultados.items[i].volumeInfo.authors, resultados.items[i].volumeInfo.industryIdentifiers[1].identifier, hasread, resultados.items[i].volumeInfo.imageLinks.thumbnail )
+                newBookObject(resultados.items[i].volumeInfo.title, resultados.items[i].volumeInfo.authors, resultados.items[i].volumeInfo.industryIdentifiers[0].identifier, hasread, resultados.items[i].volumeInfo.imageLinks.thumbnail )
             }catch{
-                newBookObject(resultados.items[i].volumeInfo.title, resultados.items[i].volumeInfo.authors, resultados.items[i].volumeInfo.industryIdentifiers[1].identifier, hasread, imgsrc = false)
+                newBookObject(resultados.items[i].volumeInfo.title, resultados.items[i].volumeInfo.authors, resultados.items[i].volumeInfo.industryIdentifiers[0].identifier, hasread, imgsrc = false)
             }
             saveUserLibrary()
             
