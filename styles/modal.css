@@ -76,10 +76,11 @@ button{
 }
 .list-item-container img{
     width: 50px;
+    margin-top: 10px;
 }
 
 .list-item-container .list-item-author{
-    max-width: 70px;
+    width: 75px;
     flex-wrap: wrap;
     overflow-wrap: break-word;
 }
