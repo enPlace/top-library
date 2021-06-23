@@ -43,16 +43,24 @@ function populateResultsList(){
             let title= resultados.items[i].volumeInfo.title
             let author = resultados.items[i].volumeInfo.authors
             let isbn = resultados.items[i].volumeInfo.industryIdentifiers[0].identifier
-            await populateSearchModal(title, author, isbn)
-    
-    toggleBookModal()
-    toggleBookModal(booksearchModal)
-            /* try{
-                newBookObject(resultados.items[i].volumeInfo.title, resultados.items[i].volumeInfo.authors, resultados.items[i].volumeInfo.industryIdentifiers[0].identifier, hasread, resultados.items[i].volumeInfo.imageLinks.thumbnail )
+            booksearchAuthor.innerHTML = author
+            booksearchISBN.innerHTML = `ISBN: ${isbn}`
+            currentTitle = title
+            currentAuthor = author
+            currentISBN = isbn
+               
+            try{
+                booksearchImg.innerHTML = `<img src=${resultados.items[i].volumeInfo.imageLinks.thumbnail} alt=""></img>`
+                currentImgsrc = resultados.items[i].volumeInfo.imageLinks.thumbnail
+                //newBookObject(resultados.items[i].volumeInfo.title, resultados.items[i].volumeInfo.authors, resultados.items[i].volumeInfo.industryIdentifiers[0].identifier, hasread, resultados.items[i].volumeInfo.imageLinks.thumbnail )
             }catch{
-                newBookObject(resultados.items[i].volumeInfo.title, resultados.items[i].volumeInfo.authors, resultados.items[i].volumeInfo.industryIdentifiers[0].identifier, hasread, imgsrc = false)
+                booksearchImg.innerHTML = `No Image Available`
+                currentImgsrc = false
+                //newBookObject(resultados.items[i].volumeInfo.title, resultados.items[i].volumeInfo.authors, resultados.items[i].volumeInfo.industryIdentifiers[0].identifier, hasread, imgsrc = false)
             }
-            saveUserLibrary() */
+            toggleBookModal()
+            toggleBookModal(booksearchModal)
+            
             
 
             /* if(resultados.items[i].volumeInfo.imageLinks){
