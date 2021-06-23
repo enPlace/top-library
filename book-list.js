@@ -23,7 +23,7 @@ function populateResultsList(){
             newListItemContainer.innerHTML = `<div class="list-item-title">${result.volumeInfo.title}</div><div class="list-item-author">${result.volumeInfo.authors}</div><div class="list-item-thumb">No image available</div>`
         }
         newListItemContainer.addEventListener('click', (e)=>{
-            
+
         })
         bookResultsContainer.appendChild(newListItemContainer)
         i++
