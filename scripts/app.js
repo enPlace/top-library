@@ -55,6 +55,12 @@ function loadLibrary(library){
         newCard(library[book])
     })
 }
+function removeChildren(parent){
+    //removes all children of an element
+    while(parent.firstChild){
+        parent.removeChild(parent.firstChild)
+    };
+}
 let resultados
 let currentTitle
 let currentAuthor
@@ -98,6 +104,7 @@ showAllResultsButton.addEventListener('click', (e)=>{
     e.preventDefault()
      toggleBookModal()
      toggleBookModal(bookListModal)
+     populateResultsList()
 })
 
 
