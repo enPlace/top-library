@@ -70,7 +70,7 @@ button{
 }
 .list-item-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin: 5px;
 }
@@ -81,6 +81,15 @@ button{
 .list-item-container .list-item-author{
     max-width: 70px;
     flex-wrap: wrap;
+    overflow-wrap: break-word;
+}
+.list-item-title{
+    width: 140px; 
+    flex-wrap: wrap;
+}
+.list-item-thumb{
+    width: 50px;
+    overflow: hidden;
 }
 #overlay{
     position: fixed;
@@ -101,10 +110,16 @@ button{
 @media only screen and (max-width: 459px) {
 
     #book-list-modal{
-        max-height: 375px;
+        max-height: 475px;
         padding: 10px;
     }
     h1{
         font-size: 20px !important;
+    }
+    .list-item-title{
+        width: 100px;   
+    }
+    .list-item-container{
+        margin-top: 20px;
     }
 }

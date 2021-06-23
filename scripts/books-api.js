@@ -7,7 +7,7 @@ const bookSearch = async function(searchText){
         throw Error(response.status)
     }
     const data = await response.json()
-
+    resultados = data
     return data
 
 }
