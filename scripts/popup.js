@@ -24,6 +24,38 @@ function toggleBookModal(modal){
 }
 
 const bookResultsContainer = document.getElementById("book-results-container")
+const listItemClick = function (e){
+    console.log("working")
+    console.log(e.target.dataset.target)
+    let i 
+    try{
+        i = e.target.dataset.target
+    }catch{
+        i = e.target.parentElement.dataset.target
+    }
+    
+    let title= resultados.items[i].volumeInfo.title
+    let author = resultados.items[i].volumeInfo.authors
+    let isbn
+    if(resultados.items[i].volumeInfo.industryIdentifiers){isbn = resultados.items[i].volumeInfo.industryIdentifiers[0].identifier}
+    booksearchTitle.innerHTML = title
+    booksearchAuthor.innerHTML = author
+    booksearchISBN.innerHTML = `ISBN: ${isbn}`
+    currentTitle = title
+    currentAuthor = author
+    currentISBN = isbn
+    try{
+        booksearchImg.innerHTML = `<img src=${resultados.items[i].volumeInfo.imageLinks.thumbnail} alt=""></img>`
+        currentImgsrc = resultados.items[i].volumeInfo.imageLinks.thumbnail
+        //newBookObject(resultados.items[i].volumeInfo.title, resultados.items[i].volumeInfo.authors, resultados.items[i].volumeInfo.industryIdentifiers[0].identifier, hasread, resultados.items[i].volumeInfo.imageLinks.thumbnail )
+    }catch{
+        booksearchImg.innerHTML = `No Image Available`
+        currentImgsrc = false
+        //newBookObject(resultados.items[i].volumeInfo.title, resultados.items[i].volumeInfo.authors, resultados.items[i].volumeInfo.industryIdentifiers[0].identifier, hasread, imgsrc = false)
+    }
+    toggleBookModal()
+    toggleBookModal(booksearchModal)
+}
 function populateResultsList(){
     removeChildren(bookResultsContainer)
     let i = 0
@@ -31,47 +63,14 @@ function populateResultsList(){
         const newListItemContainer = document.createElement("div")
         newListItemContainer.classList = "list-item-container"
         newListItemContainer.dataset.target = i
+       
         if(result.volumeInfo.imageLinks){
-        newListItemContainer.innerHTML = `<div class="list-item-title">${result.volumeInfo.title}</div><div class="list-item-author">${result.volumeInfo.authors}</div><div class="list-item-thumb"><img src=${result.volumeInfo.imageLinks.smallThumbnail} alt=""></div>`
+        newListItemContainer.innerHTML = `<div class="list-item-title" data-target = "${i}">${result.volumeInfo.title}</div><div class="list-item-author"data-target = "${i}">${result.volumeInfo.authors}</div><div class="list-item-thumb"><img data-target = "${i}" src=${result.volumeInfo.imageLinks.smallThumbnail} alt=""></div>`
         }else{
             newListItemContainer.innerHTML = `<div class="list-item-title">${result.volumeInfo.title}</div><div class="list-item-author">${result.volumeInfo.authors}</div><div class="list-item-thumb">No image available</div>`
         }
-        newListItemContainer.addEventListener('click', async(e)=>{
-            console.log("working")
-            console.log(e.target.dataset.target)
-            i = e.target.dataset.target
-            let title= resultados.items[i].volumeInfo.title
-            let author = resultados.items[i].volumeInfo.authors
-            let isbn = resultados.items[i].volumeInfo.industryIdentifiers[0].identifier
-            booksearchAuthor.innerHTML = author
-            booksearchISBN.innerHTML = `ISBN: ${isbn}`
-            currentTitle = title
-            currentAuthor = author
-            currentISBN = isbn
-               
-            try{
-                booksearchImg.innerHTML = `<img src=${resultados.items[i].volumeInfo.imageLinks.thumbnail} alt=""></img>`
-                currentImgsrc = resultados.items[i].volumeInfo.imageLinks.thumbnail
-                //newBookObject(resultados.items[i].volumeInfo.title, resultados.items[i].volumeInfo.authors, resultados.items[i].volumeInfo.industryIdentifiers[0].identifier, hasread, resultados.items[i].volumeInfo.imageLinks.thumbnail )
-            }catch{
-                booksearchImg.innerHTML = `No Image Available`
-                currentImgsrc = false
-                //newBookObject(resultados.items[i].volumeInfo.title, resultados.items[i].volumeInfo.authors, resultados.items[i].volumeInfo.industryIdentifiers[0].identifier, hasread, imgsrc = false)
-            }
-            toggleBookModal()
-            toggleBookModal(booksearchModal)
-            
-            
-
-            /* if(resultados.items[i].volumeInfo.imageLinks){
-                myLibrary[booknum].imgsrc = resultados.items[0].volumeInfo.imageLinks.thumbnail
-            } */
-            /* function newBookObject(name, author, isbn, read, imgsrc){
-                myLibrary[booknum] = new Book(booknum, name, author, isbn, read, imgsrc)
-                booknum = (parseInt(booknum) +1).toString()
-            } */
-
-        })
+        newListItemContainer.addEventListener('click', listItemClick)
+        
         bookResultsContainer.appendChild(newListItemContainer)
         i++
     })

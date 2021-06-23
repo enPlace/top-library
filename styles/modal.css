@@ -78,7 +78,12 @@ button{
     width: 50px;
     margin-top: 10px;
 }
+.list-item-container:hover{
+    cursor: pointer;
+    background-color: rgb(209, 209, 209)
+    
 
+}
 .list-item-container .list-item-author{
     width: 75px;
     flex-wrap: wrap;
