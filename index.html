@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./styles/modal.css">
     <script src="./scripts/books-api.js"defer></script>
     <script src="./scripts/storage.js" defer></script>
-    <script src="./scripts/popup.js" defer></script>
+    <script src="./scripts/modals.js" defer></script>
+    <script src="./scripts/sort.js" defer></script>
     <script src="./scripts/app.js" defer></script>
     
     
@@ -20,9 +21,21 @@
     <div class="wrapper">
         <div id="search-bar" class="search-bar">
             <form action="">
-                <input type="text" placeholder="Search for a user...">
+                <input type="text" placeholder="Filter books by title or author...">
             </form>
-        
+            <form action="">
+                <label for="sort">Sort by:</label>             
+                <select name="sort" id="sort-select">
+                    <option value="a-z">a-z</option>
+                    <option value="z-a"></option>
+                    <option value="newest">newest</option>
+                    <option value="oldest">oldest</option>
+                    
+                    <br>
+                   
+                </select>
+            </form>
+
             <form action="">
                 <button type="submit"onClick="pagereset()">Reset</button>
             </form>

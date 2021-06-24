@@ -26,7 +26,7 @@ class Book{
 }
 
 function newBookObject(name, author, isbn, read, imgsrc){
-    myLibrary[booknum] = new Book(booknum, name, author, isbn, read, imgsrc)
+    myLibrary.unshift(new Book(booknum, name, author, isbn, read, imgsrc))
     booknum = (parseInt(booknum) +1).toString()
 }
 function newCard(book){

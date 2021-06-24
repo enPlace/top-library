@@ -44,52 +44,62 @@ function saveUserLibrary(){
     localStorage.setItem('booknum', booknum)
 }
 
-const defaultLibrary= {
-    book1:{
+const defaultLibrary= [
+    {
         id: "book1",
         name: "The Philosophy of Jean-Paul Sartre",
         author: "Jean-Paul Sartre",
         read: "true",
         isbn: "1400076323",
-        imgsrc: "./images/sartre.jpg"
+        imgsrc: "./images/sartre.jpg",
+        dateAdded: new Date()
     }, 
-    book2:{
+    {
         id:"book2",
         name: "Boggs:A Comedy of Values",
         author: "Lawrence Weschler  ",
         read:"true",
         isbn: "9780226893969",
-        imgsrc: "./images/weschler.jpg"
+        imgsrc: "./images/weschler.jpg",
+        dateAdded: new Date()
+
     },
-    book3:{
+    {
         id: "book3",
         name: "Ficciones",
         author: "Jorge Louis Borges",
         read: "true",
         isbn: "8426405738",
         imgsrc: "./images/borges.jpg",
+        dateAdded: new Date(),
     }, 
-    book4:{
+    {
         id: "book4",
         name: "Something Deeply Hidden: Quantum Worlds and the Emergence of Spacetime",
         author: "Sean Carroll",
         read: "false",
         isbn: "9781524743017",
         imgsrc: "./images/carroll.jpg",
+        dateAdded: new Date()
+
     }, 
-    book5:{
+    {
         id: "book5",
         name: "Gödel, Escher, Bach: An Eternal Golden Braid",
         author: "Douglas Hofstadter",
         read: "true",
         isbn: "0465026567",
         imgsrc: "./images/hofstadter.jpg",
-},
-    book6:{
+        dateAdded: new Date(),
+
+    },
+    {
         id: "book6",
         name: "Cracking the Coding Interview", 
         author: "Gale Laakmann McDowell",
         read: "false",
         isbn:" 0984782869",
         imgsrc: "./images/mcdowell.jpg",
-    }};
+        dateAdded: new Date()
+    }
+];
