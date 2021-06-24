@@ -48,7 +48,7 @@ const defaultLibrary= [
     {
         id: "book1",
         name: "The Philosophy of Jean-Paul Sartre",
-        author: "Jean-Paul Sartre",
+        author: ["Jean-Paul Sartre"],
         read: "true",
         isbn: "1400076323",
         imgsrc: "./images/sartre.jpg",
@@ -57,7 +57,7 @@ const defaultLibrary= [
     {
         id:"book2",
         name: "Boggs:A Comedy of Values",
-        author: "Lawrence Weschler  ",
+        author: ["Lawrence Weschler"],
         read:"true",
         isbn: "9780226893969",
         imgsrc: "./images/weschler.jpg",
@@ -67,7 +67,7 @@ const defaultLibrary= [
     {
         id: "book3",
         name: "Ficciones",
-        author: "Jorge Louis Borges",
+        author: ["Jorge Louis Borges"],
         read: "true",
         isbn: "8426405738",
         imgsrc: "./images/borges.jpg",
@@ -76,7 +76,7 @@ const defaultLibrary= [
     {
         id: "book4",
         name: "Something Deeply Hidden: Quantum Worlds and the Emergence of Spacetime",
-        author: "Sean Carroll",
+        author: ["Sean Carroll"],
         read: "false",
         isbn: "9781524743017",
         imgsrc: "./images/carroll.jpg",
@@ -86,7 +86,7 @@ const defaultLibrary= [
     {
         id: "book5",
         name: "Gödel, Escher, Bach: An Eternal Golden Braid",
-        author: "Douglas Hofstadter",
+        author: ["Douglas Hofstadter"],
         read: "true",
         isbn: "0465026567",
         imgsrc: "./images/hofstadter.jpg",
@@ -96,7 +96,7 @@ const defaultLibrary= [
     {
         id: "book6",
         name: "Cracking the Coding Interview", 
-        author: "Gale Laakmann McDowell",
+        author: ["Gale Laakmann McDowell"],
         read: "false",
         isbn:" 0984782869",
         imgsrc: "./images/mcdowell.jpg",
