@@ -3,14 +3,18 @@ const sortDropdown = document.getElementById("sort-select")
 sortDropdown.addEventListener('click', (e)=>{
     console.log(e.target.value)
     if(e.target.value == "a-z"){
+        cleanLibrary(myLibrary)
         azSort()
     }else if(e.target.value == "z-a"){
+        cleanLibrary(myLibrary)
         zaSort()
         
     }else if(e.target.value == "newest"){
+        cleanLibrary(myLibrary)
         newSort()
         
     }else if(e.target.value == "oldest"){
+        cleanLibrary(myLibrary)
         oldSort()
     }
     removeChildren(userResults)
