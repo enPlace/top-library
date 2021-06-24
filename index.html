@@ -65,6 +65,15 @@
         <button type="submit" id = "add-book-button" value = "on/off">Add Book</button>
     </form>
 </div>
+<div class="modal" id="error-modal">
+    <div class="modal-header"><h1>  </h1><button class="close-button" onclick="toggleBookModal()">&times;</button></div>
+    <br>
+    <h1>Sorry, we couldn't find any books from your search. Please try again.</h1>
+    <br><br>
+    <p>(Note that if you have entered the isbn, you may have success by entering only the isbn, without an author or book title.)</p>
+    <br><br>
+    <button id = "error-return">Back to search</button>
+</div>
 <div class="modal" id="book-search-modal">
     <div class="modal-header"><h1>Is this the book you're looking for? </h1><button class="close-button" onclick="toggleBookModal()">&times;</button></div>
     <br>
@@ -85,7 +94,7 @@
     <div id = "book-results-container">
     </div>
     <form action="">
-        <button id = "confirm">Continue using only the information you entered</button>
+        
         <br><br>
         <button id = "search-again">Back to search menu</button>
     </form>

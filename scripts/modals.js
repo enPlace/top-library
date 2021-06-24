@@ -1,4 +1,5 @@
 const addbookModal = document.getElementById("add-book-modal")
+const addBookButton = document.getElementById("add-book-button")
 const booksearchModal = document.getElementById("book-search-modal")
 const booksearchImg = document.getElementById("booksearch-img")
 const booksearchTitle = document.getElementById("booksearch-title")
@@ -7,6 +8,10 @@ const booksearchISBN = document.getElementById("booksearch-isbn")
 
 const bookListModal = document.getElementById("book-list-modal")
 const overlay = document.getElementById("overlay")
+const searchAgainButton = document.getElementById("search-again")
+
+const errorModal = document.getElementById("error-modal")
+const errorModalButton = document.getElementById("error-return")
 
 function toggleBookModal(modal){
     if(overlay.classList.contains("active")){
@@ -22,6 +27,61 @@ function toggleBookModal(modal){
         overlay.dataset.target = modal.id
     }
 }
+
+let resultados
+let currentTitle
+let currentAuthor
+let currentISBN
+let currentImgsrc
+let hasread
+
+
+addBookButton.addEventListener('click',async (e)=>{
+    e.preventDefault()
+    if(newBookForm.cbox1.checked){hasread = true}else{hasread = false}
+    let title= newBookForm.title.value
+    let author = newBookForm.author.value 
+    let isbn = newBookForm.isbn.value
+    try{
+    await populateSearchModal(title, author, isbn)
+        toggleBookModal()
+        toggleBookModal(booksearchModal)
+    }catch{
+        
+        toggleBookModal()
+        toggleBookModal(errorModal)
+     
+    }
+    
+})
+
+async function populateSearchModal(title, author, isbn){
+    results = await bookSearch(`${title} ${author} ${isbn}`)
+    resultados = results
+    booksearchImg.innerHTML = `<img src=${results.items[0].volumeInfo.imageLinks.thumbnail} alt=""></img>`
+    booksearchTitle.innerHTML = results.items[0].volumeInfo.title
+    booksearchAuthor.innerHTML = results.items[0].volumeInfo.authors
+    booksearchISBN.innerHTML = `ISBN: ${results.items[0].volumeInfo.industryIdentifiers[0].identifier}`
+    currentTitle = results.items[0].volumeInfo.title
+    currentAuthor = results.items[0].volumeInfo.authors
+    currentISBN = results.items[0].volumeInfo.industryIdentifiers[0].identifier
+    currentImgsrc = results.items[0].volumeInfo.imageLinks.thumbnail
+}
+
+const confirmButton = document.getElementById("confirm")
+confirmButton.addEventListener('click', (e)=>{
+    newBookObject(currentTitle, currentAuthor, currentISBN, hasread, currentImgsrc )
+    saveUserLibrary()
+})
+
+const showAllResultsButton = document.getElementById("show-all-results-button")
+showAllResultsButton.addEventListener('click', (e)=>{
+    e.preventDefault()
+     toggleBookModal()
+     toggleBookModal(bookListModal)
+     populateResultsList()
+})
+
 
 const bookResultsContainer = document.getElementById("book-results-container")
 const listItemClick = function (e){
@@ -76,6 +136,17 @@ function populateResultsList(){
     })
 
 }
+
+searchAgainButton.addEventListener('click', (e)=>{
+    e.preventDefault()
+    toggleBookModal()
+    toggleBookModal(addbookModal)
+})
+
+errorModalButton.addEventListener('click', ()=>{
+    toggleBookModal()
+    toggleBookModal(addbookModal)
+})
 
 overlay.addEventListener('click', ()=>{
     if(overlay.classList.contains("active")){

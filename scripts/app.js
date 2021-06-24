@@ -4,8 +4,9 @@ let booknum = "1"
 let closeButtons = document.querySelectorAll(".close")
 let userResults = document.getElementById("user-results")
 const newBookForm = document.getElementById("new-book")
-const addBookButton = document.getElementById("add-book-button")
+
 const addCard = document.getElementById("add-card")
+const formTitle = document.getElementById("title")
 //const keys = Object.keys(defaultLibrary)
 
 class Book{
@@ -42,7 +43,11 @@ function newCard(book){
 const deleteCard = function(e){
     console.log(e.target.parentNode.parentNode)
     const card = e.target.parentNode.parentNode
-    delete myLibrary[card.id]
+    for(let i = 0; i<myLibrary.length; i++){
+        if(myLibrary[i].id == card.id){
+            myLibrary.splice(i,1)
+        }
+    }
     saveUserLibrary()
     e.target.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode)
 }
@@ -62,52 +67,6 @@ function removeChildren(parent){
         parent.removeChild(parent.firstChild)
     };
 }
-let resultados
-let currentTitle
-let currentAuthor
-let currentISBN
-let currentImgsrc
-let hasread
-
-
-addBookButton.addEventListener('click',async (e)=>{
-    e.preventDefault()
-    if(newBookForm.cbox1.checked){hasread = true}else{hasread = false}
-    let title= newBookForm.title.value
-    let author = newBookForm.author.value 
-    let isbn = newBookForm.isbn.value
-    await populateSearchModal(title, author, isbn)
-    
-    toggleBookModal()
-    toggleBookModal(booksearchModal)
-})
-
-async function populateSearchModal(title, author, isbn){
-    results = await bookSearch(`${title} ${author} ${isbn}`)
-    resultados = results
-    booksearchImg.innerHTML = `<img src=${results.items[0].volumeInfo.imageLinks.thumbnail} alt=""></img>`
-    booksearchTitle.innerHTML = results.items[0].volumeInfo.title
-    booksearchAuthor.innerHTML = results.items[0].volumeInfo.authors
-    booksearchISBN.innerHTML = `ISBN-10: ${results.items[0].volumeInfo.industryIdentifiers[1].identifier}`
-    currentTitle = results.items[0].volumeInfo.title
-    currentAuthor = results.items[0].volumeInfo.authors
-    currentISBN = results.items[0].volumeInfo.industryIdentifiers[1].identifier
-    currentImgsrc = results.items[0].volumeInfo.imageLinks.thumbnail
-}
-
-const confirmButton = document.getElementById("confirm")
-confirmButton.addEventListener('click', (e)=>{
-    newBookObject(currentTitle, currentAuthor, currentISBN, hasread, currentImgsrc )
-    saveUserLibrary()
-})
-
-const showAllResultsButton = document.getElementById("show-all-results-button")
-showAllResultsButton.addEventListener('click', (e)=>{
-    e.preventDefault()
-     toggleBookModal()
-     toggleBookModal(bookListModal)
-     populateResultsList()
-})
 
 
 
