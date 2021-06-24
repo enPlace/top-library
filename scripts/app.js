@@ -5,6 +5,7 @@ let closeButtons = document.querySelectorAll(".close")
 let userResults = document.getElementById("user-results")
 const newBookForm = document.getElementById("new-book")
 const addBookButton = document.getElementById("add-book-button")
+const addCard = document.getElementById("add-card")
 //const keys = Object.keys(defaultLibrary)
 
 class Book{
@@ -67,6 +68,7 @@ let currentAuthor
 let currentISBN
 let currentImgsrc
 let hasread
+
 
 addBookButton.addEventListener('click',async (e)=>{
     e.preventDefault()

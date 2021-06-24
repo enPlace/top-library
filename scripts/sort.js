@@ -4,7 +4,6 @@ sortDropdown.addEventListener('click', (e)=>{
     console.log(e.target.value)
     if(e.target.value == "a-z"){
         azSort()
-
     }else if(e.target.value == "z-a"){
         zaSort()
         
@@ -13,8 +12,16 @@ sortDropdown.addEventListener('click', (e)=>{
         
     }else if(e.target.value == "oldest"){
         oldSort()
-        
     }
+    removeChildren(userResults)
+    let newAddCard = document.createElement("div")
+    newAddCard.classList = "user-card add-card"
+    newAddCard.id = "add-card"
+    newAddCard.innerHTML = '<div class = "plus">+</div>'
+    newAddCard.addEventListener('click', ()=>{toggleBookModal(addbookModal)})
+    userResults.appendChild(newAddCard)
+    loadLibrary(myLibrary)
+    
 })
 
 //sort a-z
