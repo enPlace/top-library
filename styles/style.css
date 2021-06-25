@@ -110,13 +110,22 @@ body{
 .user-card:hover .avatar{
     transition: all .4s ease;
 }
-.user-card.active{
-    transform: scale(2.14);
-    transition: all .4s ease;
-    background-color: rgb(78, 78, 78);
-    
-    z-index: 5;argin-top: 10%;
-    
+.card-content{
+    width: 100%;
+    height: 100%; 
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all .5s ease;
+}
+.card-content:hover{
+    opacity: .9;
+    background-color: black;
+    transition: all .5s ease;
 }
 .close{
     position: absolute;
@@ -246,6 +255,69 @@ body{
      }
 
 }
+
+ /* The switch - the box around the slider */
+ .switch {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 11.33px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 9px;
+    width: 9px;
+    left: 1px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(9px);
+    -ms-transform: translateX(9px);
+    transform: translateX(9px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  } 
 /*Scrollbar*/
 /* width */
 ::-webkit-scrollbar {
