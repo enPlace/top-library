@@ -1,5 +1,6 @@
 const addbookModal = document.getElementById("add-book-modal")
 const addBookButton = document.getElementById("add-book-button")
+
 const booksearchModal = document.getElementById("book-search-modal")
 const booksearchImg = document.getElementById("booksearch-img")
 const booksearchTitle = document.getElementById("booksearch-title")
@@ -14,6 +15,7 @@ const errorModal = document.getElementById("error-modal")
 const errorModalButton = document.getElementById("error-return")
 
 function toggleBookModal(modal){
+    //interacts with overlay and modals to close and open modals
     if(overlay.classList.contains("active")){
         current = document.getElementById(overlay.dataset.target)
         current.classList.remove("active")
@@ -28,6 +30,7 @@ function toggleBookModal(modal){
     }
 }
 
+//global access to a selected book across different functions
 let resultados
 let currentTitle
 let currentAuthor

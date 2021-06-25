@@ -69,9 +69,8 @@ function removeChildren(parent){
 }
 
 
-
+//any time the window loads
 getUserLibrary()
-
 function cleanLibrary(library){
     //sometimes a null value is added if the api doesn't load correctly. This removes any 
     //null values. 

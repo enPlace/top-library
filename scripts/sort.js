@@ -72,7 +72,6 @@ searchbar.addEventListener('input', (e)=>{
     let searchResults = matches = myLibrary.filter(book=>{
         return book.name.match(regex)||book.author[0].match(regex)
     })
-
     removeChildren(userResults)
     createAddCard()
     loadLibrary(searchResults)
