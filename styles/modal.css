@@ -7,12 +7,15 @@
     
     border-radius: 10px;
     z-index: 20;
-    background-color: rgb(228, 228, 228);
+    background-color: rgba(126, 146, 182, 0.959);
+    background-image: linear-gradient(to bottom right, rgb(107, 106, 106),rgb(48, 230, 215));
+    opacity: 1;
+    
     width: 500px; 
     max-width: 80%;
     padding: 40px;
 
-    color:rgba(0, 0, 0)
+    color:rgb(255, 255, 255)
 }
 .modal.active{
     transform: translate(-50%, -50%)
