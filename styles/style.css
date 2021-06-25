@@ -35,20 +35,7 @@ body{
    
     
 }
-/* .search-bar input{
-    width: 40%;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 24px;
-    outline: none; 
-    background: url(loupe.png) no-repeat scroll;
-    background-position: 98%;
-    background-size: 20px;
-    border-radius: 5px;
 
-    
-}
- */
 
 
 
@@ -88,17 +75,10 @@ body{
     
 }
 .user-card:hover {
- /*    width: 160px;
-    height: 160px;
-    margin: 0px;
-    margin-left: 5px;
-    margin-right: 5px;
-   margin-bottom: -5px; */
    transform: scale(1.14);
    transition: all .4s ease;
    background-color: rgb(78, 78, 78);
-   z-index: 5;
-   
+   z-index: 5;  
    
 }
 .user-card:hover button{
@@ -107,12 +87,11 @@ body{
     font-size: 18px;
     transition: all .4s ease;
 }
-.user-card:hover .avatar{
-    transition: all .4s ease;
-}
+
 .card-content{
-    width: 100%;
-    height: 100%; 
+   
+    width: 101%;
+    height: 101%; 
     opacity: 0;
     position: absolute;
     z-index: 10;
@@ -120,7 +99,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: all .5s ease;
+    transition: all .5s ease; 
 }
 .card-content:hover{
     opacity: .9;
@@ -211,6 +190,7 @@ body{
 }
 
 @media only screen and (max-width: 459px) {
+
     .user-card{
         width:93px;
         height: 140px ;
@@ -229,7 +209,8 @@ body{
            margin-left: 5px;
            margin-right: 5px;
           margin-bottom: -5px; */
-          transform: scale(1.64);
+          height: 170px;
+          transform: scale(1.44);
           transition: all .4s ease;
           background-color: rgb(78, 78, 78);
           justify-content: center;
@@ -238,6 +219,7 @@ body{
           
           
        }
+    
     .avatar{
         width: 100%;
     }
