@@ -38,11 +38,7 @@ button{
     background: transparent;
     font-size: 20px;
 }
-#cbox1{
-    
-    width:20px !important;
-    
-}
+
 .modal-content{
     display: flex;
     flex-direction: column;
@@ -62,11 +58,21 @@ button{
     height: 25px;
     font-size: 18px;
 }
+#cbox1{
+    
+    width:20px !important;
+    
+}
+#form-checkbox{
+    display: flex;
+    align-items: center;
+}
 #book-search-modal{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 450px;
     
 }
 #booksearch-img img{
@@ -134,21 +140,34 @@ button{
     z-index: 19;
 }
 
+@media only screen and (max-width: 759px) {
+    .modal{
+        max-width: 350px;
+    }
+    h1{
+        font-size:20px !important;
+    }
+}
 
-@media only screen and (max-width: 459px) {
+@media only screen and (max-width: 559px) {
 
     #book-list-modal{
         max-height: 475px;
+        width: 440px ;
         padding: 10px;
     }
-    .modal{
-        max-width: 250px;
+    #add-book-modal{
+        max-width: 200px;
+    }
+    #book-search-modal{
+        max-width: 200px;
+        max-height: 425px;
     }
     .modal input{
-        width: 120px;
+        width: 90% !important;
     }
     h1{
-        font-size: 20px !important;
+        font-size: 19px;
     }
     .list-item-title{
         width: 100px;   
