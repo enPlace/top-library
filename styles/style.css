@@ -1,10 +1,27 @@
 
 
 body{
-    margin: 0;
+    margin: 20px;
     font-family: sans-serif;
     background-color:rgb(37, 37, 37);
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Special Elite', cursive;
+}
+header h1{
+  font-size: 30px;
+}
+header h2{
+  font-size: 20px;
 }
 
 
@@ -29,6 +46,7 @@ body{
       
     
 }
+
 .search-bar form{
     margin: 5px;
     margin-top: 1%;
@@ -175,6 +193,12 @@ body{
 }
 .info{
   margin: 5px;
+}
+.has-read{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #sort-form{
   display: flex;

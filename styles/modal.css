@@ -150,6 +150,9 @@ button{
     h1{
         font-size:20px !important;
     }
+    h2{
+        font-size: 15px !important;
+    }
 }
 
 @media only screen and (max-width: 559px) {
