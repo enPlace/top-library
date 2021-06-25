@@ -8,14 +8,14 @@
     border-radius: 10px;
     z-index: 20;
     background-color: rgba(126, 146, 182, 0.959);
-    background-image: linear-gradient(to bottom right, rgb(107, 106, 106),rgb(48, 230, 215));
-    opacity: 1;
+    background-image: linear-gradient(to bottom right, rgba(175, 174, 174, 0.842),rgb(92, 153, 194));
+    opacity: .98;
     
     width: 500px; 
     max-width: 80%;
     padding: 40px;
 
-    color:rgb(255, 255, 255)
+    color:rgb(0, 0, 0)
 }
 .modal.active{
     transform: translate(-50%, -50%)

@@ -35,15 +35,15 @@ function newCard(book){
     let newCard = document.createElement('div')
     newCard.classList = "user-card"
     newCard.innerHTML = `<img src="${book.imgsrc}" class="avatar">` 
-    //newcard.innerHTML = `<div class="close"><button>&times;</button></div><img src="${book.imgsrc}" class="avatar"> <div class="top info">${book.name} </div><div class="bottom info">${book.author} </div>`
+    
     
     let newContent = document.createElement('div')
     newContent.classList = "card-content"
     newContent.innerHTML = `<div class="close">
     <button>&times;</button>
     </div>
-    <div class="top info">${book.name}</div>
-    <div class="bottom info">${book.author}</div>
+    <div class="top-info">${book.name}</div>
+    <div class="bottom-info">${book.author}</div>
     <div class="isbn">ISBN: ${book.isbn}</div>
     <br><br>`
 
