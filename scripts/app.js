@@ -89,16 +89,21 @@ const changeReadStatus = function(e){
         return book.id ==e.target.dataset.bookid
     })
 }
+let card = false
 const deleteCard = function(e){
-    console.log(e.target.parentNode.parentNode.parentNode)
-    const card = e.target.parentNode.parentNode.parentNode
-    for(let i = 0; i<myLibrary.length; i++){
-        if(myLibrary[i].id == card.id){
+    if(!card){
+        card = e.target.parentNode.parentNode.parentNode
+        toggleBookModal(deleteModal)
+    }else{
+        for(let i = 0; i<myLibrary.length; i++){
+            if(myLibrary[i].id == card.id){
             myLibrary.splice(i,1)
+            }
         }
+        saveUserLibrary()
+        card.parentNode.removeChild(card)
+        card = false
     }
-    saveUserLibrary()
-    e.target.parentNode.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode.parentNode)
 }
 function pagereset(){
     localStorage.clear()

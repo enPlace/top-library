@@ -14,6 +14,8 @@ const searchAgainButton = document.getElementById("search-again")
 const errorModal = document.getElementById("error-modal")
 const errorModalButton = document.getElementById("error-return")
 
+const deleteModal = document.getElementById("delete-modal")
+
 function toggleBookModal(modal){
     //interacts with overlay and modals to close and open modals
     if(overlay.classList.contains("active")){
@@ -21,6 +23,7 @@ function toggleBookModal(modal){
         current.classList.remove("active")
         overlay.classList.remove("active")
         overlay.dataset.target = ""
+        card = false
         
         
     }else{
@@ -37,7 +40,6 @@ let currentAuthor
 let currentISBN
 let currentImgsrc
 let hasread
-
 
 addBookButton.addEventListener('click',async (e)=>{
     e.preventDefault()
@@ -96,7 +98,6 @@ const listItemClick = function (e){
     }catch{
         i = e.target.parentElement.dataset.target
     }
-    
     let title= resultados.items[i].volumeInfo.title
     let author = resultados.items[i].volumeInfo.authors
     let isbn
@@ -126,18 +127,15 @@ function populateResultsList(){
         const newListItemContainer = document.createElement("div")
         newListItemContainer.classList = "list-item-container"
         newListItemContainer.dataset.target = i
-       
         if(result.volumeInfo.imageLinks){
         newListItemContainer.innerHTML = `<div class="list-item-title" data-target = "${i}">${result.volumeInfo.title}</div><div class="list-item-author"data-target = "${i}">${result.volumeInfo.authors}</div><div class="list-item-thumb"><img data-target = "${i}" src=${result.volumeInfo.imageLinks.smallThumbnail} alt=""></div>`
         }else{
             newListItemContainer.innerHTML = `<div class="list-item-title">${result.volumeInfo.title}</div><div class="list-item-author">${result.volumeInfo.authors}</div><div class="list-item-thumb">No image available</div>`
         }
         newListItemContainer.addEventListener('click', listItemClick)
-        
         bookResultsContainer.appendChild(newListItemContainer)
         i++
     })
-
 }
 
 searchAgainButton.addEventListener('click', (e)=>{
@@ -151,8 +149,23 @@ errorModalButton.addEventListener('click', ()=>{
     toggleBookModal(addbookModal)
 })
 
+const confirmDeleteButton = document.getElementById("confirm-delete")
+confirmDeleteButton.addEventListener('click', (e)=>{
+    e.preventDefault()
+    deleteCard()
+    toggleBookModal()
+})
+
+const cancelDeleteButton = document.getElementById("cancel-delete")
+cancelDeleteButton.addEventListener('click', (e)=>{
+    e.preventDefault()
+    card = false
+    toggleBookModal()
+})
+
 overlay.addEventListener('click', ()=>{
     if(overlay.classList.contains("active")){
         toggleBookModal()
+        card = false
     }
 })

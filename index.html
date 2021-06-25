@@ -88,6 +88,7 @@
 <div class="modal" id="add-book-modal">
     <div class="modal-header"><h1>Add a new book </h1><button class="close-button" onclick="toggleBookModal()">&times;</button></div>
     <br>
+    <div class="modal-content">
     <form id="new-book" autocomplete="off">
         <label for="title" class="title">Title</label>
         <br><br>
@@ -101,20 +102,13 @@
         <br><br>
         <input type="text" name = "isbn">
         <br><br>
-        <input type="checkbox" name="cbox1" ><label> I've already read this book</label>
+        <input type="checkbox" name="cbox1" id ="cbox1"><label> I've already read this book</label>
         <br><br>
         <button type="submit" id = "add-book-button" value = "on/off">Add Book</button>
     </form>
+    </div>
 </div>
-<div class="modal" id="error-modal">
-    <div class="modal-header"><h1>  </h1><button class="close-button" onclick="toggleBookModal()">&times;</button></div>
-    <br>
-    <h1>Sorry, we couldn't find any books from your search. Please try again.</h1>
-    <br><br>
-    <p>(Note that if you have entered the isbn, you may have success by entering only the isbn, without an author or book title.)</p>
-    <br><br>
-    <button id = "error-return">Back to search</button>
-</div>
+
 <div class="modal" id="book-search-modal">
     <div class="modal-header"><h1>Is this the book you're looking for? </h1><button class="close-button" onclick="toggleBookModal()">&times;</button></div>
     <br>
@@ -139,7 +133,31 @@
         <br><br>
         <button id = "search-again">Back to search menu</button>
     </form>
+</div>
 
+<div class="modal" id="error-modal">
+    <div class="modal-header"><h1>  </h1><button class="close-button" onclick="toggleBookModal()">&times;</button></div>
+    <br>
+    <div class="modal-content">
+    <h1>Sorry, we couldn't find any books from your search. Please try again.</h1>
+    <br><br>
+    <p>(Note that if you have entered the isbn, you may have success by entering only the isbn, without an author or book title.)</p>
+    <br><br>
+    <button id = "error-return">Back to search</button>
+    </div>
+</div>
+
+<div class="modal" id="delete-modal">
+    <div class="modal-header"><h1>  </h1><button class="close-button" onclick="toggleBookModal()">&times;</button></div>
+    <br>
+    <div class="modal-content">
+        <h1>Are you sure you want to delete this book from your library?</h1>
+        <br><br>
+        <p>This action cannot be undone</p>
+        <br><br>
+        <form action=""><button id = "confirm-delete">Delete</button><button id = "cancel-delete">Go back</button>
+        </form>
+    </div>
 </div>
 
 <div id="overlay"></div>
