@@ -32,24 +32,73 @@ function newBookObject(name, author, isbn, read, imgsrc){
     booknum = (parseInt(booknum) +1).toString()
 }
 function newCard(book){
-    let newcard = document.createElement('div')
-    newcard.classList = "user-card"
-    newcard.innerHTML = `<div class="close"><button>&times;</button></div><img src="${book.imgsrc}" class="avatar"> <div class="top info">${book.name} </div><div class="bottom info">${book.author} </div>`
-    userResults.appendChild(newcard)    
-    newcard.id = book.id
-    const closeButton = newcard.querySelectorAll(".close")[0]
+    let newCard = document.createElement('div')
+    newCard.classList = "user-card"
+    newCard.innerHTML = `<img src="${book.imgsrc}" class="avatar">` 
+    //newcard.innerHTML = `<div class="close"><button>&times;</button></div><img src="${book.imgsrc}" class="avatar"> <div class="top info">${book.name} </div><div class="bottom info">${book.author} </div>`
+    
+    let newContent = document.createElement('div')
+    newContent.classList = "card-content"
+    newContent.innerHTML = `<div class="close">
+    <button>&times;</button>
+    </div>
+    <div class="top info">${book.name}</div>
+    <div class="bottom info">${book.author}</div>
+    <div class="isbn">ISBN: ${book.isbn}</div>
+    <br><br>`
+
+    let hasReadToggle = document.createElement('div')
+    hasReadToggle.classList = "has-read"
+    hasReadToggle.dataset.bookid = book.id
+    if(book.read){
+        hasReadToggle.innerHTML = `<div>Read</div>
+        <label class="switch">
+            <input data-bookid = "${book.id}" type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>`
+    }else{
+        hasReadToggle.innerHTML = `<div>Not read</div>
+        <label class="switch">
+            <input data-bookid = ${book.id} type="checkbox">
+            <span class="slider round"></span>
+          </label>`
+    }
+    hasReadToggle.addEventListener('change', changeReadStatus)
+    
+    newContent.appendChild(hasReadToggle)
+    newCard.appendChild(newContent)
+    userResults.appendChild(newCard)    
+    newCard.id = book.id
+    const closeButton = newContent.querySelectorAll(".close")[0]
     closeButton.addEventListener('click', deleteCard)
 }
+
+const changeReadStatus = function(e){   
+    myLibrary.some(book=>{
+        if(book.id==e.target.dataset.bookid){
+            if(book.read){
+                book.read = false
+                e.target.parentNode.parentNode.firstChild.textContent = "Not Read"
+                saveUserLibrary()
+            }else{
+                book.read =true
+                e.target.parentNode.parentNode.firstChild.textContent = "Read"
+                saveUserLibrary()
+            }            
+        }
+        return book.id ==e.target.dataset.bookid
+    })
+}
 const deleteCard = function(e){
-    console.log(e.target.parentNode.parentNode)
-    const card = e.target.parentNode.parentNode
+    console.log(e.target.parentNode.parentNode.parentNode)
+    const card = e.target.parentNode.parentNode.parentNode
     for(let i = 0; i<myLibrary.length; i++){
         if(myLibrary[i].id == card.id){
             myLibrary.splice(i,1)
         }
     }
     saveUserLibrary()
-    e.target.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode)
+    e.target.parentNode.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode.parentNode)
 }
 function pagereset(){
     localStorage.clear()

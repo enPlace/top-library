@@ -125,7 +125,7 @@ body{
 .card-content:hover{
     opacity: .9;
     background-color: black;
-    transition: all .5s ease;
+    /* transition: all .3s ease; */
 }
 .close{
     position: absolute;
