@@ -4,35 +4,40 @@
     left:50%;
     transform: translate(-50%, -50%) scale(0);
     transition: 0.3s ease-in-out; 
-    
-    border-radius: 10px;
+    color: white;
+    border-radius: 20px;
     z-index: 20;
-    background-color: rgba(126, 146, 182, 0.959);
-    background-image: linear-gradient(to bottom right, rgba(175, 174, 174, 0.842),rgb(92, 153, 194));
-    opacity: .98;
+    
+    background-color: rgb(216, 216, 216);
+    /* background-image: linear-gradient(to top, rgba(85, 85, 85, 0.842),rgb(150, 149, 153)); */
+    
     
     width: 500px; 
     max-width: 80%;
     padding: 40px;
 
-    color:rgb(0, 0, 0)
+     color:rgb(0, 0, 0) 
 }
 .modal.active{
     transform: translate(-50%, -50%)
 }
 .modal h1{
     font-size:x-large;
+    font-family: 'Special Elite', cursive;
 
 }
 button{
      cursor: pointer;
+     font-family: 'Special Elite', cursive;
+     width: 50px;
+     height: 30px;
 }
 .modal-header{
     display: flex;
     padding: 10px 15px; 
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black; 
+    border-bottom: 6px solid rgb(58, 58, 58); 
     
 }
 .modal-header button{
@@ -54,7 +59,8 @@ button{
     height: 30px;
 }
 #add-book-modal{
-    width: 450px;
+    width: 300px;
+    height: 450px;
 }
 #add-book-modal input{
     width: 300px;
@@ -75,28 +81,44 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 450px;
+    width: 300px;
     
 }
 #booksearch-img img{
     width: 150px;
 
 }
+#booksearch-author{
+    text-align: center;
+}
+#booksearch-title{
+    text-align: center;
+}
 #book-list-modal{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-height: 500px;
+    height: 600px;
+    width: 350px;
+    padding: 15px;
     
 }
 #book-list-modal form{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
     
+}
+#book-list-modal button{
+    width: 120px;
+    height: 40px;
 }
 #book-results-container{
     overflow-y: scroll;
+    background-color: rgb(148, 148, 148);
+    border-radius: 5px;
+    height:700px;
+    background-image: linear-gradient(to bottom, rgba(184, 182, 182, 0.842),rgb(204, 203, 206)); 
 }
 .list-item-container{
     display: flex;
@@ -110,7 +132,7 @@ button{
 }
 .list-item-container:hover{
     cursor: pointer;
-    background-color: rgb(209, 209, 209)
+    background-color: rgb(170, 203, 238)
     
 
 }
@@ -163,11 +185,32 @@ button{
         padding: 10px;
     }
     #add-book-modal{
-        max-width: 200px;
+        max-width: 250px;
+        height: 375px;
+        padding: 10px;
+        top: 32%;
     }
+    #add-book-modal br{
+        display: none;
+    }
+    #add-book-modal .modal-header{
+        margin-bottom:10px;
+    }
+    .inf{
+        margin: 10px;
+    }
+    .title{margin-top: 5px; }
     #book-search-modal{
         max-width: 200px;
         max-height: 425px;
+        padding: 50px;
+    }#book-search-modal button{
+        width: 70px;
+        margin: 10px;
+    }
+    .add-button{
+        display: flex;
+        justify-content: center;
     }
     .modal input{
         width: 90% !important;
@@ -180,5 +223,9 @@ button{
     }
     .list-item-container{
         margin-top: 20px;
+    }
+    #error-modal{
+        max-width: 200px;
+        padding: 30px;
     }
 }
