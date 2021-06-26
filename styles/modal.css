@@ -3,7 +3,7 @@
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%) scale(0);
-    transition: 0.3s ease-in-out; 
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) .5s; 
     color: white;
     border-radius: 20px;
     z-index: 20;
@@ -19,7 +19,8 @@
      color:rgb(0, 0, 0) 
 }
 .modal.active{
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) .5s; 
 }
 .modal h1{
     font-size:x-large;
@@ -75,6 +76,10 @@ button{
 #form-checkbox{
     display: flex;
     align-items: center;
+}
+#delete-modal{
+    padding: 20px;
+    width: 300px;
 }
 #book-search-modal{
     display: flex;
