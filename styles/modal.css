@@ -159,7 +159,7 @@ button{
 
     #book-list-modal{
         max-height: 475px;
-        width: 440px ;
+        max-width: 300px ;
         padding: 10px;
     }
     #add-book-modal{
