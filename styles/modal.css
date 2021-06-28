@@ -103,8 +103,8 @@ button{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 600px;
-    width: 350px;
+    height: 550px;
+    width: 500px;
     padding: 15px;
     
 }
