@@ -80,4 +80,30 @@ searchbar.addEventListener('input', (e)=>{
 
 readFilter.addEventListener('change',(e)=>{
     console.log(e.target.value)
+    let tempLibrary =[]
+    const value = e.target.value
+    
+    if (value == "read"){
+        myLibrary.forEach(book=>{if(book.read){tempLibrary.push(book)}})
+        removeChildren(userResults)
+        createAddCard()
+        loadLibrary(tempLibrary)
+    }
+    if (value =="not-read"){
+        myLibrary.forEach(book=>{if(!book.read){tempLibrary.push(book)}})
+        removeChildren(userResults)
+        createAddCard()
+        loadLibrary(tempLibrary)
+
+    }
+    if(value == "all"){
+        removeChildren(userResults)
+        createAddCard()
+        loadLibrary(myLibrary)
+
+    }
+    //make temp libraries
+    //
+    //createAddCard()
+    //loadLibrary(tempLibrary)
 })
