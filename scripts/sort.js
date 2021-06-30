@@ -102,8 +102,4 @@ readFilter.addEventListener('change',(e)=>{
         loadLibrary(myLibrary)
 
     }
-    //make temp libraries
-    //
-    //createAddCard()
-    //loadLibrary(tempLibrary)
 })
