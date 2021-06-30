@@ -2,7 +2,8 @@
 
 const sortDropdown = document.getElementById("sort-select")
 const searchbar = document.getElementById("search-bar")
-sortDropdown.addEventListener('click', (e)=>{
+const readFilter = document.getElementById("read-filter")
+sortDropdown.addEventListener('change', (e)=>{
     console.log(e.target.value)
     if(e.target.value == "a-z"){
         cleanLibrary(myLibrary)
@@ -75,4 +76,8 @@ searchbar.addEventListener('input', (e)=>{
     removeChildren(userResults)
     createAddCard()
     loadLibrary(searchResults)
+})
+
+readFilter.addEventListener('change',(e)=>{
+    console.log(e.target.value)
 })

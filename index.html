@@ -40,21 +40,19 @@
                 </select>
             </form>
             <form id = "read-filter">
-                view:
-                <input type="radio" id="rad" name="view" value="HTML">
-                <label for="read">read</label>
-                <input type="radio" id="not-read" name="view" value="CSS">
-                <label for="not-read">not-read</label>
-                <input type="radio" id="not-read" name="view" value="JavaScript">
+                <div>view:</div>
+                
+                <input type="radio" id="all" name="view" value="all" checked="checked"> 
                 <label for="all">all</label>
+                <input type="radio" id="read" name="view" value="read">
+                <label for="read">read</label>
+                <input type="radio" id="not-read" name="view" value="not-read">
+                <label for="not-read">not read</label>
+                
               
               </form>
-
-
-            <!-- <form action="">
-                <button type="submit"onClick="pagereset()">Reset</button>
-            </form> -->
         </div>
+     
         <div id = "user-results" class="user-results">
             <div class="user-card add-card" id= "add-card" onclick="toggleBookModal(addbookModal)">
             <div class = "plus">+</div>

@@ -61,6 +61,17 @@ header h2{
   height: 20px;
 }
 
+#read-filter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input[type="radio"]{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
 
 
 .user-results{
@@ -223,6 +234,17 @@ header h2{
         background-color: rgb(78, 78, 78);
         position: relative;
     }
+    #read-filter{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    input[type="radio"]{
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      transform: scale(1.5)
+    }
    /*  .user-card:hover{
       height: 190px;
     } */
@@ -247,6 +269,12 @@ header h2{
     }
     .plus{
         font-size: 50px;
+     }
+     .read-filter{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
      }
 
 }
